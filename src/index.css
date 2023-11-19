@@ -27,6 +27,10 @@ header {
 	 border-b-[1px] border-gray-300 absolute left-0 top-0 z-50;
 }
 
+footer {
+	background-color: #091d0b;
+}
+
 a {
 	font-weight: 500;
 	color: #646cff;
@@ -62,4 +66,3 @@ button {
 button:hover {
 	box-shadow: 0 0 10px 2px #aaaaaa;
 }
-

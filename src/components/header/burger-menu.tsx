@@ -7,6 +7,14 @@ const BurgerMenu: React.FC<BurgerMenuProps> = () => {
 	const [isOpen, setIsOpen] = useState(false);
 
 	const toggleMenu = () => {
+		const body = document.body;
+
+		if (isOpen) {
+			body.style.overflow = "scroll";
+		} else {
+			body.style.overflow = "hidden";
+		}
+
 		setIsOpen(!isOpen);
 	};
 
