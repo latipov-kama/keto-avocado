@@ -24,7 +24,7 @@ main {
 
 header {
 	@apply w-full h-[70px] px-4 flex items-center justify-between
-	 border-b-[1px] border-gray-300 absolute left-0 top-0 z-50;
+	 border-b-[1px] border-gray-300 fixed left-0 top-0 z-50 bg-white;
 }
 
 footer {
@@ -52,7 +52,7 @@ h1 {
 }
 
 button {
-	background-color: #42a047;
+	background-color: #16a34a;
 	color: white;
 	border-radius: 6px;
 	padding: 0.4em 1em;

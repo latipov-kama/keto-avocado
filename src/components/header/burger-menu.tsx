@@ -1,21 +1,31 @@
 import React, { useState } from "react";
+import { Link } from "react-scroll";
 import "boxicons";
 
 interface BurgerMenuProps {}
 
 const BurgerMenu: React.FC<BurgerMenuProps> = () => {
+	const sections = [
+		{ section: "home", title: "Главная" },
+		{ section: "about", title: "Обо мне" },
+		{ section: "course", title: "О курсе" },
+		{ section: "results", title: "Результаты" },
+	];
 	const [isOpen, setIsOpen] = useState(false);
 
 	const toggleMenu = () => {
-		const body = document.body;
-
 		if (isOpen) {
-			body.style.overflow = "scroll";
+			document.body.style.overflow = "scroll";
 		} else {
-			body.style.overflow = "hidden";
+			document.body.style.overflow = "hidden";
 		}
 
 		setIsOpen(!isOpen);
+	};
+
+	const handleLinkClick = () => {
+		document.body.style.overflow = "scroll";
+		setIsOpen(false);
 	};
 
 	return (
@@ -31,38 +41,27 @@ const BurgerMenu: React.FC<BurgerMenuProps> = () => {
 			</div>
 
 			<div
-				className={` bg-green-600 w-full h-full fixed top-[70px] z-20 duration-200 ease-linear 
+				className={`bg-green-600 w-full h-full fixed top-[70px] z-20 duration-200 ease-linear 
        block ${isOpen ? "left-0" : "-left-full"}`}
 			>
 				<ul
 					className="h-full flex flex-col pt-[60%] items-center gap-6
         text-3xl"
 				>
-					<li>
-						<a href="#home" className="text-white">
-							Главная
-						</a>
-					</li>
-					<li>
-						<a href="#home" className="text-white">
-							Обо мне
-						</a>
-					</li>
-					<li>
-						<a href="#home" className="text-white">
-							О курсе
-						</a>
-					</li>
-					<li>
-						<a href="#home" className="text-white">
-							Результаты
-						</a>
-					</li>
-					<li>
-						<a href="#home" className="text-white">
-							Отзывы
-						</a>
-					</li>
+					{sections.map((section, i) => (
+						<li key={i}>
+							<Link
+								to={section.section}
+								smooth={true}
+								duration={500}
+								offset={60} // Adjust the offset as needed
+								onClick={handleLinkClick}
+								className="text-white duration-200 ease-linear hover:text-[#bbbbbb]"
+							>
+								{section.title}
+							</Link>
+						</li>
+					))}
 				</ul>
 			</div>
 		</div>
