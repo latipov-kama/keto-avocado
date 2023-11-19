@@ -18,12 +18,17 @@ interface props {}
 const ClientList: React.FC<props> = () => {
 	return (
 		<Swiper
+		className="overflow-clip"
 			modules={[Navigation, Pagination]}
 			spaceBetween={20}
 			slidesPerView={1}
 			onSlideChange={() => console.log("slide change")}
 			onSwiper={(swiper) => console.log(swiper)}
       breakpoints={{
+        1536: {
+          width: 1280,
+          slidesPerView: 3
+        },
         1280: {
           width: 1280,
           slidesPerView: 3

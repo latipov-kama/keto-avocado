@@ -1,6 +1,7 @@
 import React from "react";
 import Nav from "./nav";
 import Logo from "../common/logo";
+import BurgerMenu from "./burger-menu";
 
 interface props {}
 
@@ -9,7 +10,10 @@ const Header: React.FC<props> = () => {
 		<header>
 			<Logo />
 			<Nav />
-			<button>Записаться</button>
+			<div className="flex items-center gap-4">
+				<button>Записаться</button>
+				<BurgerMenu />
+			</div>
 		</header>
 	);
 };
