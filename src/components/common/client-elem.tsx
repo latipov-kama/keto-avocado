@@ -25,7 +25,7 @@ const ClientElem: React.FC<props> = ({ img, initial, month, total }) => {
 					До {initial}кг <br /> После {+initial - +total}кг
 				</p>
 				<span className="font-medium text-[#2c7030] text-right sm:text-base text-lg">
-					{total}кг <br /> за {month} месяца
+					{total}кг <br /> за {month} {+month > 1 ? "месяца" : "месяц"}
 				</span>
 			</div>
 		</div>

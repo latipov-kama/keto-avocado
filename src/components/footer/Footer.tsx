@@ -1,6 +1,5 @@
 import React from "react";
-import logo from "../../assets/logo.svg";
-
+import Logo from "../common/logo";
 interface props {}
 
 const Footer: React.FC<props> = () => {
@@ -8,7 +7,7 @@ const Footer: React.FC<props> = () => {
 		<footer className="bg-[#051006]">
 			<div className="container mx-auto py-4 px-4">
 				<div className="mb-3 flex items-center gap-2 justify-center">
-					<img src={logo} alt="" className="w-8" />
+					<Logo width="8"/>
 					<span className="text-white text-xl">PPitanie</span>
 				</div>
 				<div className="mb-4 flex gap-4 justify-center">
