@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Header from "../components/header/header";
-import Footer from "../components/footer/Footer";
+import Footer from "../components/footer/footer";
 import SignUpModal from "../components/common/signup-form";
 
 interface props {
@@ -12,7 +12,6 @@ const Layout: React.FC<props> = ({ children }) => {
 
 	const openModal = () => {
 		setIsOpened(true);
-		console.log("open");
 	};
 	const closeModal = () => {
 		setIsOpened(false);

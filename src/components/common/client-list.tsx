@@ -19,7 +19,8 @@ interface props {}
 
 const ClientList: React.FC<props> = () => {
 	return (
-		<Swiper className="px-4"
+		<Swiper
+			className="px-4"
 			modules={[Navigation, Autoplay]}
 			autoplay={{
 				delay: 3000,
@@ -28,8 +29,8 @@ const ClientList: React.FC<props> = () => {
 			spaceBetween={20}
 			loop={true}
 			slidesPerView={1}
-			onSlideChange={() => console.log("slide change")}
-			onSwiper={(swiper) => console.log(swiper)}
+			onSlideChange={() => console.log()}
+			onSwiper={() => console.log()}
 			breakpoints={{
 				1536: {
 					width: 1280,
