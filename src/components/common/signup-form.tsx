@@ -75,9 +75,7 @@ const SignUpModal: React.FC<props> = ({ isOpen, onClose }) => {
 							Ваше имя
 						</label>
 						<input
-							{...register("name", {
-								required: true,
-							})}
+							{...register("name", { required: true })}
 							className="w-full h-12 sm:h-14 p-5 mb-0 rounded-md bg-[#f5f6fb] duration-150 ease-linear 
 							outline-none border border-[#cccccc] focus:border-[#16a34a50] focus:border-4"
 							placeholder="Введите имя"
@@ -93,9 +91,7 @@ const SignUpModal: React.FC<props> = ({ isOpen, onClose }) => {
 							Ваш номер телефона
 						</label>
 						<input
-							{...register("phone", {
-								required: true,
-							})}
+							{...register("phone", { required: true })}
 							defaultValue={"+998"}
 							className="w-full h-12 sm:h-14 p-5 rounded-md bg-[#f5f6fb] duration-150 ease-linear 
 							outline-none border border-[#cccccc] focus:border-[#16a34a50] focus:border-4"
