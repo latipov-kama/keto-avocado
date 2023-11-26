@@ -34,7 +34,7 @@ const SignUpModal: React.FC<props> = ({ isOpen, onClose }) => {
 			})
 			.then((res) => {
 				onClose();
-				reset();
+				reset({ name: "", phone: "" });
 				console.log("Telegram API response:", res.data);
 			})
 			.catch((err) => console.error("Error sending Telegram message:", err));
