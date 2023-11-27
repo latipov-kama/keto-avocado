@@ -34,24 +34,11 @@ const SignUpModal: React.FC<props> = ({ isOpen, onClose }) => {
 			})
 			.then((res) => {
 				onClose();
-				reset({ name: "", phone: "" });
+				reset({ name: "", phone: "+998" });
 				console.log("Telegram API response:", res.data);
 			})
 			.catch((err) => console.error("Error sending Telegram message:", err));
 
-		// try {
-		// 	const response = await axios.post(
-		// 		`https://api.telegram.org/bot${botToken}/sendMessage`,
-		// 		{
-		// 			chat_id: data.chatId,
-		// 			text: data.message,
-		// 		}
-		// 	);
-
-		// 	console.log("Telegram API response:", response.data);
-		// } catch (error) {
-		// 	console.error("Error sending Telegram message:", error);
-		// }
 		console.log(response);
 	};
 
