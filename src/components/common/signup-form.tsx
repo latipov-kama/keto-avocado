@@ -6,14 +6,13 @@ import Logo from "./logo";
 interface FormData {
 	name: string;
 	phone: string;
-	message?: string;
 }
 interface props {
 	isOpen: boolean;
 	onClose: () => void;
 }
 
-const SignUpModal: React.FC<props> = ({ isOpen, onClose }) => {
+const SignupForm: React.FC<props> = ({ isOpen, onClose }) => {
 	const {
 		register,
 		handleSubmit,
@@ -24,8 +23,6 @@ const SignUpModal: React.FC<props> = ({ isOpen, onClose }) => {
 	const onSubmit: SubmitHandler<FormData> = async (data) => {
 		const botToken = "6846544608:AAHl7jqAoFwQaMlQWc3Ii9IWeoj7QTMxKEU"; // Replace with your bot token
 		const chatId = "-1002144713519";
-
-		console.log(data);
 
 		const response = await axios
 			.post(`https://api.telegram.org/bot${botToken}/sendMessage`, {
@@ -63,7 +60,7 @@ const SignUpModal: React.FC<props> = ({ isOpen, onClose }) => {
 						</label>
 						<input
 							{...register("name", { required: true })}
-							className="w-full h-12 sm:h-14 p-5 mb-0 rounded-md bg-[#f5f6fb] duration-150 ease-linear 
+							className="w-full h-12 sm:h-14 p-4 mb-0 rounded-md bg-[#f5f6fb] duration-150 ease-linear 
 							outline-none border border-[#cccccc] focus:border-[#16a34a50] focus:border-4"
 							placeholder="Введите имя"
 							id="name"
@@ -80,7 +77,7 @@ const SignUpModal: React.FC<props> = ({ isOpen, onClose }) => {
 						<input
 							{...register("phone", { required: true })}
 							defaultValue={"+998"}
-							className="w-full h-12 sm:h-14 p-5 rounded-md bg-[#f5f6fb] duration-150 ease-linear 
+							className="w-full h-12 sm:h-14 p-4 rounded-md bg-[#f5f6fb] duration-150 ease-linear 
 							outline-none border border-[#cccccc] focus:border-[#16a34a50] focus:border-4"
 							id="phone"
 						/>
@@ -106,4 +103,4 @@ const SignUpModal: React.FC<props> = ({ isOpen, onClose }) => {
 	);
 };
 
-export default SignUpModal;
+export default SignupForm;

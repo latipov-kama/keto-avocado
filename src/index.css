@@ -28,7 +28,7 @@ header {
 }
 
 footer {
-	background-color: #091d0b;
+	background-color: #0d1618;
 }
 
 a {
@@ -50,21 +50,27 @@ h1 {
 	font-size: 3.2em;
 	line-height: 1.1;
 }
+h1,
+.title {
+	font-family: "Merriweather", serif;
+}
 
 button {
-	background-color: #16a34a;
-	color: white;
-	border-radius: 6px;
-	padding: 0.4em 1em;
-	font-size: 1em;
+	background-color: #15c39a;
+	color: #ffffff;
+	border-radius: 100px;
+	padding: 16px 30px;
+	box-shadow: 0px 10px 20px 0px rgba(21, 195, 154, 0.3);
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	font-size: 13px;
 	font-weight: 500;
-	font-family: inherit;
 	cursor: pointer;
 	transition: 0.3s;
 }
 
-button:hover {
-	box-shadow: 0 0 10px 2px #aaaaaa;
+.radial-gradient {
+	background: radial-gradient(#fff, #444);
 }
 
 .show {

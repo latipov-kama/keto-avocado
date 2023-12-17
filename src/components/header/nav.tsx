@@ -19,7 +19,6 @@ const Nav: React.FC<props> = () => {
 						<Link
 							to={item.section}
 							smooth={true}
-							offset={60} // Adjust the offset as needed
 							duration={500}
 							className="text-black duration-200 ease-linear hover:text-[#16a34a]"
 						>

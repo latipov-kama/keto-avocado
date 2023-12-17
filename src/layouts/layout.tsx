@@ -1,29 +1,17 @@
-import React, { useState } from "react";
-import Header from "../components/header/header";
-import Footer from "../components/footer/footer";
-import SignUpModal from "../components/common/signup-form";
+import React from "react";
+import Header from "../components/header/Header";
+import Footer from "../components/footer/Footer";
 
 interface props {
 	children: React.ReactNode;
 }
 
 const Layout: React.FC<props> = ({ children }) => {
-	const [isOpened, setIsOpened] = useState(false);
-
-	const openModal = () => {
-		setIsOpened(true);
-	};
-	const closeModal = () => {
-		setIsOpened(false);
-	};
-
 	return (
 		<>
-			<Header onOpen={openModal} />
+			<Header />
 			<main>{children}</main>
 			<Footer />
-
-			<SignUpModal isOpen={isOpened} onClose={closeModal} />
 		</>
 	);
 };

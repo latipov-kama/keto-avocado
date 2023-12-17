@@ -4,7 +4,7 @@ interface props {}
 
 const Footer: React.FC<props> = () => {
 	return (
-		<footer className="bg-[#051006]">
+		<footer>
 			<div className="container mx-auto py-4 px-4">
 				<div className="mb-3 flex items-center gap-2 justify-center">
 					<Logo width="8"/>

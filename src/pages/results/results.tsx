@@ -5,7 +5,7 @@ import ClientList from "../../components/common/client-list";
 
 interface props {}
 
-const About: React.FC<props> = () => {
+const Results: React.FC<props> = () => {
 	return (
 		<Element name="results">
 			<section className="container mx-auto mb-20 pt-10 relative z-10">
@@ -18,4 +18,4 @@ const About: React.FC<props> = () => {
 	);
 };
 
-export default About;
+export default Results;

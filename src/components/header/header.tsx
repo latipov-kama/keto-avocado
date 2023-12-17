@@ -1,21 +1,16 @@
 import React from "react";
 import Nav from "./nav";
 import Logo from "../common/logo";
-import BurgerMenu from "./burger-menu";
+import Menu from "./menu";
 
-interface props {
-	onOpen: () => void;
-}
+interface props {}
 
-const Header: React.FC<props> = ({ onOpen }) => {
+const Header: React.FC<props> = () => {
 	return (
 		<header>
 			<Logo width="20" />
 			<Nav />
-			<div className="flex items-center gap-4">
-				<button onClick={onOpen}>Записаться</button>
-				<BurgerMenu />
-			</div>
+			<Menu />
 		</header>
 	);
 };
