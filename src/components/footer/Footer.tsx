@@ -1,8 +1,7 @@
 import React from "react";
 import Logo from "../common/logo";
-interface props {}
 
-const Footer: React.FC<props> = () => {
+const Footer: React.FC = () => {
 	return (
 		<footer>
 			<div className="container mx-auto py-4 px-4">
