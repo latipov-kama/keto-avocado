@@ -40,7 +40,7 @@ const Menu: React.FC<MenuProps> = () => {
 						<li key={i}>
 							<a
 								href={`#${item.section}`}
-								onClick={() => setIsOpen(false)}
+								onClick={toggleMenu}
 								className="text-white duration-200 ease-linear  hover:text-[#bbbbbb]"
 							>
 								{item.title}
