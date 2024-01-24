@@ -1,5 +1,5 @@
 import aboutImg from "../../assets/images/orig.jpg";
-import "boxicons";
+import { BiLogoTelegram, BiLogoInstagram, BiPhone } from "react-icons/bi";
 
 const About: React.FC = () => {
 	return (
@@ -40,21 +40,21 @@ const About: React.FC = () => {
 								target="_blank"
 								className="w-10 h-10 bg-[#e7b06d] rounded-full flex items-center justify-center"
 							>
-								<i className="bx bxl-telegram text-white text-xl"></i>
+								<BiLogoTelegram color="white" size={24} />
 							</a>
 							<a
 								href="https://www.instagram.com/kamolketocoach/"
 								target="_blank"
 								className="w-10 h-10 bg-[#e7b06d] rounded-full flex items-center justify-center"
 							>
-								<i className="bx bxl-instagram text-white text-2xl"></i>
+								<BiLogoInstagram color="white" size={24} />
 							</a>
 							<a
 								href="tel:+998916282227"
 								target="_blank"
 								className="w-10 h-10 bg-[#e7b06d] rounded-full flex items-center justify-center"
 							>
-								<i className="bx bx-phone text-white text-xl"></i>
+								<BiPhone color="white" size={24} />
 							</a>
 						</div>
 					</div>
