@@ -6,7 +6,7 @@ import Menu from "./menu";
 const Header: React.FC = () => {
 	return (
 		<header>
-			<Logo width="20" />
+			<Logo width={64} />
 			<Nav />
 			<Menu />
 		</header>

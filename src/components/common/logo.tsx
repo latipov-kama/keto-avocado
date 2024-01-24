@@ -1,12 +1,12 @@
 import React from "react";
-import logo from "../../assets/logo.svg";
+import logo from "../../../public/logo.svg";
 
 interface props {
-	width: string;
+	width: number;
 }
 
 const Logo: React.FC<props> = ({ width }) => {
-	return <img src={logo} alt="logo" className={`w-${width}`} />;
+	return <img src={logo} alt="logo" style={{ width: `${width}px` }} />;
 };
 
 export default Logo;

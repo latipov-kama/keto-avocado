@@ -5,9 +5,26 @@ import icon3 from "../../assets/icons/nutrition-3.png";
 
 const Info: React.FC = () => {
 	return (
-		<section className="max-w-[1144px] py-20 px-8 mx-auto">
+		<section className="max-w-[1144px] pt-20 pb-10 px-8 mx-auto">
 			<div></div>
-			<div className="flex md:flex-row flex-col-reverse gap-10 md:gap-20">
+			<div className="flex md:flex-row flex-col gap-10 md:gap-20">
+				<div className="flex-1 flex flex-col justify-center md:text-left text-center md:items-start items-center">
+					<span className="text-lg text-[#333] font-medium">
+						Преобразуйте свой образ жизни
+					</span>
+					<h2 className="title mt-2 mb-6 text-2xl sm:text-3xl md:text-4xl font-bold leading-snug text-[#FFC47C]">
+						Курс здорового питания
+					</h2>
+
+					<p className="text-sm text-[#666]">
+						Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minus quam
+						ratione provident laudantium nemo necessitatibus, ut excepturi
+						repellat, vero quod itaque consectetur cupiditate laboriosam
+						exercitationem eum. Ipsam vitae voluptatibus totam.
+					</p>
+
+					<button className="w-fit mt-10">Связаться</button>
+				</div>
 				<div className="flex-1 flex flex-col gap-6 md:gap-10">
 					<div className="p-7 flex gap-5 items-center shadow-md">
 						<img src={icon1} alt="" className="w-20" />
@@ -45,22 +62,6 @@ const Info: React.FC = () => {
 							</p>
 						</div>
 					</div>
-				</div>
-
-				<div className="flex-1 flex flex-col justify-center md:text-left text-center md:items-start items-center">
-					<h2 className="title mb-6 text-2xl sm:text-3xl md:text-4xl font-bold leading-snug text-[#333]">
-						Узнайте, как питаться здоровой пищей, не меняя при этом занятого
-						образа жизни
-					</h2>
-
-					<p className="text-sm text-[#666]">
-						Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minus quam
-						ratione provident laudantium nemo necessitatibus, ut excepturi
-						repellat, vero quod itaque consectetur cupiditate laboriosam
-						exercitationem eum. Ipsam vitae voluptatibus totam.
-					</p>
-
-					<button className="w-fit mt-10">Связаться</button>
 				</div>
 			</div>
 		</section>

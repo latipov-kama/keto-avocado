@@ -20,7 +20,7 @@ interface props {}
 const ClientList: React.FC<props> = () => {
 	return (
 		<Swiper
-			className="px-4"
+			className="px-4 py-8"
 			modules={[Navigation, Autoplay]}
 			autoplay={{
 				delay: 3000,
@@ -33,23 +33,18 @@ const ClientList: React.FC<props> = () => {
 			onSwiper={() => console.log()}
 			breakpoints={{
 				1536: {
-					width: 1280,
 					slidesPerView: 3,
 				},
 				1280: {
-					width: 1280,
 					slidesPerView: 3,
 				},
 				1024: {
-					width: 1024,
 					slidesPerView: 3,
 				},
 				768: {
-					width: 768,
 					slidesPerView: 3,
 				},
 				640: {
-					width: 640,
 					slidesPerView: 2,
 				},
 			}}
