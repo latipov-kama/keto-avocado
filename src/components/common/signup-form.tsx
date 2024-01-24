@@ -51,7 +51,7 @@ const SignupForm: React.FC<props> = ({ isOpen, onClose }) => {
 
 			<div className="w-full h-full flex items-center justify-center">
 				<div className="max-w-[560px] w-full p-6  sm:p-10 bg-white rounded-lg">
-					<Logo width="12" />
+					<Logo width={12} />
 					<h3 className="mb-8 mt-3 text-2xl font-medium">Заявка на курс</h3>
 
 					<form onSubmit={handleSubmit(onSubmit)} className="flex flex-col">
