@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-scroll";
 
 interface props {}
 
@@ -9,6 +8,7 @@ const Nav: React.FC<props> = () => {
 		{ section: "about", title: "Обо мне" },
 		{ section: "course", title: "О курсе" },
 		{ section: "results", title: "Результаты" },
+		{ section: "bmi", title: "Калькулятор" },
 	];
 
 	return (
@@ -16,14 +16,12 @@ const Nav: React.FC<props> = () => {
 			<ul className="hidden md:flex items-center gap-6 font-medium">
 				{sections.map((item, i) => (
 					<li key={i}>
-						<Link
-							to={item.section}
-							smooth={true}
-							duration={500}
-							className="text-black duration-200 ease-linear hover:text-[#16a34a]"
+						<a
+							href={`#${item.section}`}
+							className="text-[#20292f] duration-150 ease-linear hover:text-[#40a38c]"
 						>
 							{item.title}
-						</Link>
+						</a>
 					</li>
 				))}
 			</ul>

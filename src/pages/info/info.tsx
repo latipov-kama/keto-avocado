@@ -6,8 +6,7 @@ import icon3 from "../../assets/icons/nutrition-3.png";
 const Info: React.FC = () => {
 	return (
 		<section className="max-w-[1144px] pt-20 pb-10 px-8 mx-auto">
-			<div></div>
-			<div className="flex md:flex-row flex-col gap-10 md:gap-20">
+			<div id="course" className="flex md:flex-row flex-col gap-10 md:gap-20">
 				<div className="flex-1 flex flex-col justify-center md:text-left text-center md:items-start items-center">
 					<span className="text-lg text-[#333] font-medium">
 						Преобразуйте свой образ жизни

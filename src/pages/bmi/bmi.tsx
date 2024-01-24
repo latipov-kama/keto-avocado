@@ -22,7 +22,7 @@ const BMI: React.FC = () => {
 
 	return (
 		<section className="bg-[#15C39A] sm:pt-32 sm:pb-24 pt-24 pb-16 px-2 relative">
-			<div
+			<div id="bmi"
 				className="max-w-[1080px] mx-auto bg-white px-4
 			sm:px-10 py-12 rounded-lg"
 			>

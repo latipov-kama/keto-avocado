@@ -7,7 +7,7 @@ import plan from "../../assets/images/diet-plan.png";
 
 const Service: React.FC = () => {
 	return (
-		<section className="relative py-20 bg-gradient-to-b from-[#fafafa] to-white overflow-hidden">
+		<section className="relative pt-20 pb-12 bg-gradient-to-b from-[#fafafa] to-white overflow-hidden">
 			<div className="max-w-[1144px] mx-auto px-6 sm:px-12">
 				<div className="flex md:flex-row flex-col-reverse gap-12 lg:gap-16 lg:items-center">
 					<div>
@@ -31,47 +31,44 @@ const Service: React.FC = () => {
 						</p>
 					</div>
 				</div>
-				<div className="mt-20 p-8 bg-[#15c39a] rounded-md">
-					{/* <h1 className="mb-8 text-3xl font-bold text-[#fff] text-center">
-					Вы получите
-				</h1> */}
-					<div className="grid grid-cols-2 md:grid-cols-4 gap-5 sm:gap-10">
-						<div className="flex flex-col items-center text-center">
-							<img src={icon1} className="w-20" />
-							<h3 className="mt-4 mb-2 text-lg text-[#fff] font-bold">
-								Коачинг по питанию
-							</h3>
-							<p className="text-sm text-[#555] leading-6">
-								Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-							</p>
-						</div>
-						<div className="flex flex-col items-center text-center">
-							<img src={icon3} className="w-20" />
-							<h3 className="mt-4 mb-2 text-lg text-[#fff] font-bold">
-								Витамины и добавки
-							</h3>
-							<p className="text-sm text-[#555] leading-6">
-								Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-							</p>
-						</div>
-						<div className="flex flex-col items-center text-center">
-							<img src={icon2} className="w-20" />
-							<h3 className="mt-4 mb-2 text-lg text-[#fff] font-bold">
-								Спортивные советы
-							</h3>
-							<p className="text-sm text-[#555] leading-6">
-								Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-							</p>
-						</div>
-						<div className="flex flex-col items-center text-center">
-							<img src={icon4} className="w-20" />
-							<h3 className="mt-4 mb-2 text-lg text-[#fff] font-bold">
-								Похудение
-							</h3>
-							<p className="text-sm text-[#555] leading-6">
-								Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-							</p>
-						</div>
+			</div>
+			<div className="mt-20 bg-[#34545a]">
+				<div className="max-w-[1144px] mx-auto px-6 p-8 grid grid-cols-2 md:grid-cols-4 gap-5 sm:gap-10">
+					<div className="flex flex-col items-center text-center">
+						<img src={icon1} className="w-20" />
+						<h3 className="mt-4 mb-2 text-lg text-[#fff] font-bold">
+							Коачинг по питанию
+						</h3>
+						<p className="text-sm text-[#ccc] leading-6">
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+						</p>
+					</div>
+					<div className="flex flex-col items-center text-center">
+						<img src={icon3} className="w-20" />
+						<h3 className="mt-4 mb-2 text-lg text-[#fff] font-bold">
+							Витамины и добавки
+						</h3>
+						<p className="text-sm text-[#ccc] leading-6">
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+						</p>
+					</div>
+					<div className="flex flex-col items-center text-center">
+						<img src={icon2} className="w-20" />
+						<h3 className="mt-4 mb-2 text-lg text-[#fff] font-bold">
+							Спортивные советы
+						</h3>
+						<p className="text-sm text-[#ccc] leading-6">
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+						</p>
+					</div>
+					<div className="flex flex-col items-center text-center">
+						<img src={icon4} className="w-20" />
+						<h3 className="mt-4 mb-2 text-lg text-[#fff] font-bold">
+							Похудение
+						</h3>
+						<p className="text-sm text-[#ccc] leading-6">
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+						</p>
 					</div>
 				</div>
 			</div>

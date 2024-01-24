@@ -17,7 +17,10 @@ const Home: React.FC<props> = () => {
 	return (
 		<>
 			<SignupForm isOpen={isOpened} onClose={closeModal} />
-			<section className="h-screen  mx-auto pt-[70px] flex flex-col justify-center relative overflow-hidden">
+			<section
+				id="home"
+				className="h-screen  mx-auto pt-[70px] flex flex-col justify-center relative overflow-hidden"
+			>
 				<BgMain />
 				<div className="w-full mx-auto flex flex-col items-center relative z-10 text-center">
 					<h1 className="text-4xl sm:text-5xl md:text-[64px] tracking-widest text-[#333] drop-shadow-xl">

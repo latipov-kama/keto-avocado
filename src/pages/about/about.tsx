@@ -3,7 +3,7 @@ import "boxicons";
 
 const About: React.FC = () => {
 	return (
-		<section className="bg-[#34545a] relative overflow-hidden">
+		<section id="about" className="bg-[#34545a] relative overflow-hidden">
 			<div className="max-w-[1144px] mx-auto px-8 pb-14 pt-20 text-center">
 				{/* <h2 className="title mb-5 text-3xl text-white font-bold">
 					Страдаешь из-за лишнего веса?

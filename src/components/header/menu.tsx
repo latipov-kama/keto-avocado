@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import { Link } from "react-scroll";
 import "boxicons";
 import MenuButton from "../common/menu-button";
 
@@ -11,6 +10,7 @@ const Menu: React.FC<MenuProps> = () => {
 		{ section: "about", title: "Обо мне" },
 		{ section: "course", title: "О курсе" },
 		{ section: "results", title: "Результаты" },
+		{ section: "bmi", title: "Калькулятор" },
 	];
 	const [isOpen, setIsOpen] = useState(false);
 
@@ -22,11 +22,6 @@ const Menu: React.FC<MenuProps> = () => {
 		}
 
 		setIsOpen(!isOpen);
-	};
-
-	const handleLinkClick = () => {
-		document.body.style.overflow = "scroll";
-		setIsOpen(false);
 	};
 
 	return (
@@ -42,18 +37,15 @@ const Menu: React.FC<MenuProps> = () => {
 					className="h-full flex flex-col items-center justify-center gap-8
         text-3xl"
 				>
-					{sections.map((section, i) => (
+					{sections.map((item, i) => (
 						<li key={i}>
-							<Link
-								to={section.section}
-								smooth={true}
-								duration={500}
-								offset={60} // Adjust the offset as needed
-								onClick={handleLinkClick}
+							<a
+								href={`#${item.section}`}
+								onClick={() => setIsOpen(false)}
 								className="text-white duration-200 ease-linear  hover:text-[#bbbbbb]"
 							>
-								{section.title}
-							</Link>
+								{item.title}
+							</a>
 						</li>
 					))}
 				</ul>
