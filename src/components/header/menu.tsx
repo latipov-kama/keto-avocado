@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import "boxicons";
 import MenuButton from "../common/menu-button";
 
 interface MenuProps {}

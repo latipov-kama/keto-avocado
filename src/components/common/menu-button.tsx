@@ -1,4 +1,5 @@
 import React from "react";
+import { BiMenu, BiX } from "react-icons/bi";
 
 interface props {
 	isOpen: boolean;
@@ -6,17 +7,17 @@ interface props {
 }
 
 const MenuButton: React.FC<props> = ({ isOpen, toggleMenu }) => {
-	
-
 	return (
 		<div
 			className={`burger-icon relative ${isOpen ? "open z-50 text-white" : ""}`}
 			onClick={toggleMenu}
 		>
-			<i
-				className={`bx bx-menu text-[40px] ${isOpen ? "hidden" : "block"}`}
-			></i>
-			<i className={`bx bx-x text-[40px] ${isOpen ? "block" : "hidden"}`}></i>
+			<BiMenu
+				size={36}
+				color="#20292f"
+				className={`${isOpen ? "hidden" : "block"}`}
+			></BiMenu>
+			<BiX size={36} className={`${isOpen ? "block" : "hidden"}`}></BiX>
 		</div>
 	);
 };
