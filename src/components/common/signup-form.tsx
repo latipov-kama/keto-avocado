@@ -2,6 +2,7 @@ import React from "react";
 import axios from "axios";
 import { useForm, SubmitHandler } from "react-hook-form";
 import Logo from "./logo";
+import { BiX } from "react-icons/bi";
 
 interface FormData {
 	name: string;
@@ -46,12 +47,12 @@ const SignupForm: React.FC<props> = ({ isOpen, onClose }) => {
 			} w-full h-screen p-5 bg-[rgba(0,0,0,.85)] fixed left-0 top-0 z-50`}
 		>
 			<div className="absolute right-4 top-4 cursor-pointer" onClick={onClose}>
-				<i className="bx bx-x text-white text-5xl"></i>
+				<BiX color="white" size={48} />
 			</div>
 
 			<div className="w-full h-full flex items-center justify-center">
 				<div className="max-w-[560px] w-full p-6  sm:p-10 bg-white rounded-lg">
-					<Logo width={12} />
+					<Logo width={48} />
 					<h3 className="mb-8 mt-3 text-2xl font-medium">Заявка на курс</h3>
 
 					<form onSubmit={handleSubmit(onSubmit)} className="flex flex-col">

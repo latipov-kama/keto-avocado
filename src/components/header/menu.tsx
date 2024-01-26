@@ -28,7 +28,7 @@ const Menu: React.FC<MenuProps> = () => {
 			<MenuButton isOpen={isOpen} toggleMenu={toggleMenu} />
 
 			<div
-				className={`bg-black bg-opacity-80 w-full h-full fixed top-[0px] left-0 z-20 duration-200 ease-linear ${
+				className={`bg-black bg-opacity-90 w-full h-full fixed top-[0px] left-0 z-20 duration-200 ease-linear ${
 					isOpen ? "show" : "hide"
 				}`}
 			>
