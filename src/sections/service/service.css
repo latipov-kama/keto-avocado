@@ -14,10 +14,10 @@
 .service__diet-content {
 	@apply flex-1 text-center md:text-left;
 }
-.service__content h2 {
+.service__diet-content h2 {
 	@apply mb-5 text-xl sm:text-2xl lg:text-3xl text-[#333] font-bold;
 }
-.service__content p {
+.service__diet-content p {
 	@apply text-[#666];
 }
 
