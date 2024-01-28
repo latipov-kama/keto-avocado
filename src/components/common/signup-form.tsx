@@ -1,19 +1,17 @@
 import React from "react";
 import axios from "axios";
 import { useForm, SubmitHandler } from "react-hook-form";
+import { FormData } from "../../models/FormData";
 import Logo from "./logo";
-import { BiX } from "react-icons/bi";
 
-interface FormData {
-	name: string;
-	phone: string;
-}
 interface props {
-	isOpen: boolean;
-	onClose: () => void;
+	closeModal: () => void;
 }
 
-const SignupForm: React.FC<props> = ({ isOpen, onClose }) => {
+const SignUpForm: React.FC<props> = ({ closeModal }) => {
+	const errorStyle = {
+		border: "2px solid red",
+	};
 	const {
 		register,
 		handleSubmit,
@@ -31,7 +29,7 @@ const SignupForm: React.FC<props> = ({ isOpen, onClose }) => {
 				text: `Name: ${data.name}\nPhone: ${data.phone}`,
 			})
 			.then((res) => {
-				onClose();
+				closeModal();
 				reset({ name: "", phone: "+998" });
 				console.log("Telegram API response:", res.data);
 			})
@@ -41,67 +39,60 @@ const SignupForm: React.FC<props> = ({ isOpen, onClose }) => {
 	};
 
 	return (
-		<div
-			className={`${
-				!isOpen ? "hide" : "show"
-			} w-full h-screen p-5 bg-[rgba(0,0,0,.85)] fixed left-0 top-0 z-50`}
-		>
-			<div className="absolute right-4 top-4 cursor-pointer" onClick={onClose}>
-				<BiX color="white" size={48} />
-			</div>
+		<div className="max-w-[560px] w-full p-6  sm:p-10 bg-white rounded-lg">
+			<Logo width={48} />
+			<h3 className="mb-8 mt-3 text-2xl font-medium">Заявка на курс</h3>
 
-			<div className="w-full h-full flex items-center justify-center">
-				<div className="max-w-[560px] w-full p-6  sm:p-10 bg-white rounded-lg">
-					<Logo width={48} />
-					<h3 className="mb-8 mt-3 text-2xl font-medium">Заявка на курс</h3>
+			<form onSubmit={handleSubmit(onSubmit)} className="flex flex-col">
+				<label htmlFor="name" className="w-fit text-sm mb-1">
+					Ваше имя
+				</label>
+				<input
+					{...register("name", {
+						required: "Введите имя",
+						pattern: /^[а-яА-ЯёЁa-zA-Z]+$/,
+					})}
+					className="signup__input"
+					style={errors.name?.type == "pattern" ? errorStyle : undefined}
+					id="name"
+				/>
+				{
+					<span className=" text-xs text-red-600 font-medium">
+						{errors.name?.message}
+					</span>
+				}
 
-					<form onSubmit={handleSubmit(onSubmit)} className="flex flex-col">
-						<label htmlFor="name" className="w-fit text-sm mb-1">
-							Ваше имя
-						</label>
-						<input
-							{...register("name", { required: true })}
-							className="w-full h-12 sm:h-14 p-4 mb-0 rounded-md bg-[#f5f6fb] duration-150 ease-linear 
-							outline-none border border-[#cccccc] focus:border-[#16a34a50] focus:border-4"
-							placeholder="Введите имя"
-							id="name"
-						/>
-						{errors.name && (
-							<span className=" text-xs text-red-600 font-medium">
-								Необходимо заполнить поле!
-							</span>
-						)}
+				<label htmlFor="phone" className="w-fit text-sm mt-6 mb-1">
+					Ваш номер телефона
+				</label>
+				<input
+					{...register("phone", {
+						required: "Введите номер телефона",
+						pattern:
+							/^(\+)?((\d{2,3}) ?\d|\d)(([ -]?\d)|( ?(\d{2,3}) ?)){5,12}\d$/,
+						min: 7,
+					})}
+					defaultValue={"+998"}
+					className="signup__input"
+					id="phone"
+					style={errors.phone?.type == "pattern" ? errorStyle : undefined}
+				/>
+				{errors.phone?.type == "required" ? (
+					<span className=" text-xs text-red-600 font-medium">
+						{errors.phone?.message}
+					</span>
+				) : null}
 
-						<label htmlFor="phone" className="w-fit text-sm mt-6 mb-1">
-							Ваш номер телефона
-						</label>
-						<input
-							{...register("phone", { required: true })}
-							defaultValue={"+998"}
-							className="w-full h-12 sm:h-14 p-4 rounded-md bg-[#f5f6fb] duration-150 ease-linear 
-							outline-none border border-[#cccccc] focus:border-[#16a34a50] focus:border-4"
-							id="phone"
-						/>
-						{errors.phone && (
-							<span className=" text-xs text-red-600 font-medium">
-								Необходимо заполнить поле!
-							</span>
-						)}
+				<button className="w-full h-14 mt-4 text-lg">Оставить заявку</button>
+			</form>
 
-						<button className="w-full h-14 mt-4 text-lg">
-							Оставить заявку
-						</button>
-					</form>
+			<div className="h-[1px] my-5 bg-[#ccc]"></div>
 
-					<div className="h-[1px] my-5 bg-[#ccc]"></div>
-
-					<p className="text-sm text-[#7d7f95]">
-						Пожалуйста, убедитесь, что правильно ввели данные.
-					</p>
-				</div>
-			</div>
+			<p className="text-sm text-[#7d7f95]">
+				Пожалуйста, убедитесь, что правильно ввели данные.
+			</p>
 		</div>
 	);
 };
 
-export default SignupForm;
+export default SignUpForm;

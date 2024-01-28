@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import BgMain from "../../components/common/bg-main";
-import SignupForm from "../../components/common/signup-form";
+import SignupForm from "../../components/common/signup-modal";
 
 interface props {}
 

@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import SignupForm from "../../components/common/signup-form";
+import SignupForm from "../../components/common/signup-modal";
 import icon1 from "../../assets/icons/nutrition-1.png";
 import icon2 from "../../assets/icons/nutrition-2.png";
 import icon3 from "../../assets/icons/nutrition-3.png";

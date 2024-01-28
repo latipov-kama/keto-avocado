@@ -118,3 +118,8 @@ button {
 		#ffffff 90%
 	);
 }
+
+.signup__input {
+	@apply w-full h-12 sm:h-14 p-4 rounded-md bg-[#f5f6fb] duration-150 ease-linear 
+	outline-none border border-[#cccccc] focus:border-[#16a34a50] focus:border-4;
+}
