@@ -1,0 +1,41 @@
+#service {
+	@apply relative pt-20 pb-12 bg-gradient-to-b from-[#fafafa] to-white overflow-hidden;
+}
+
+.service-diet {
+	@apply max-w-[1144px] mx-auto px-6 sm:px-12 flex md:flex-row flex-col-reverse gap-12 lg:gap-16 lg:items-center;
+}
+.service__diet-img {
+	@apply shadow-2xl p-5 w-fit mx-auto md:mx-0;
+}
+.service__diet-img img {
+	@apply h-[300px] md:h-[400px];
+}
+.service__diet-content {
+	@apply flex-1 text-center md:text-left;
+}
+.service__content h2 {
+	@apply mb-5 text-xl sm:text-2xl lg:text-3xl text-[#333] font-bold;
+}
+.service__content p {
+	@apply text-[#666];
+}
+
+.service-plan {
+	@apply mt-20 bg-[#34545a];
+}
+.service__plan-content {
+	@apply max-w-[1144px] mx-auto px-6 p-8 grid grid-cols-2 md:grid-cols-4 gap-5 sm:gap-10;
+}
+.service__plan-item {
+	@apply flex flex-col items-center text-center;
+}
+.service__plan-item img {
+	@apply w-20;
+}
+.service__plan-item h3 {
+	@apply mt-4 mb-2 text-lg text-[#fff] font-bold;
+}
+.service__plan-item p {
+	@apply text-sm text-[#ccc] leading-6;
+}

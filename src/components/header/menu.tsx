@@ -24,24 +24,16 @@ const Menu: React.FC<MenuProps> = () => {
 	};
 
 	return (
-		<div className="block md:hidden">
+		<div className="header__menu">
 			<MenuButton isOpen={isOpen} toggleMenu={toggleMenu} />
-
-			<div
-				className={`bg-black bg-opacity-90 w-full h-full fixed top-[0px] left-0 z-20 duration-200 ease-linear ${
-					isOpen ? "show" : "hide"
-				}`}
-			>
-				<ul
-					className="h-full flex flex-col items-center justify-center gap-8
-        text-3xl"
-				>
+			<div className={`header__menu-modal ${isOpen ? "show" : "hide"}`}>
+				<ul className="header__menu-list">
 					{sections.map((item, i) => (
 						<li key={i}>
 							<a
 								href={`#${item.section}`}
 								onClick={toggleMenu}
-								className="text-white duration-200 ease-linear  hover:text-[#bbbbbb]"
+								className="header__menu-link"
 							>
 								{item.title}
 							</a>

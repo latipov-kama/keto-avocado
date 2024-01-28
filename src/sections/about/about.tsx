@@ -1,26 +1,25 @@
 import aboutImg from "../../assets/images/orig.jpg";
 import { BiLogoTelegram, BiLogoInstagram, BiPhone } from "react-icons/bi";
+import "./about.css";
 
 const About: React.FC = () => {
 	return (
-		<section id="about" className="bg-[#34545a] relative overflow-hidden">
-			<div className="max-w-[1144px] mx-auto px-8 pb-14 pt-20 text-center">
-				{/* <h2 className="title mb-5 text-3xl text-white font-bold">
+		<section id="about">
+			<div className="about-content">
+				{/* <h2 className="mb-5 text-3xl text-white font-bold">
 					Страдаешь из-за лишнего веса?
 				</h2>
-				<p className="title text-lg text-[#15C39A] font-bold">
+				<p className="title mb-12 text-lg text-[#15C39A] font-bold">
 					Ты не один. И я здесь, чтобы помочь!
 				</p> */}
 
-				<div className="flex flex-col md:flex-row justify-evenly items-center gap-10">
-					<div className="flex flex-col text-center md:text-left">
-						<h2 className="mb-5 text-xl text-white font-medium">
+				<div className="about-box">
+					<div className="about__info">
+						<h2>
 							Меня зовут
-							<span className="block mt-2 text-4xl text-[#FFC47C]">
-								Камол Латипов
-							</span>
+							<span>Камол Латипов</span>
 						</h2>
-						<p className="max-w-[500px] text-white">
+						<p>
 							Lorem, ipsum dolor sit amet consectetur adipisicing elit. Harum
 							nulla vero deleniti autem in molestias fuga velit voluptate aut
 							quas laborum nobis a consequuntur alias cum libero ex fugit
@@ -28,32 +27,22 @@ const About: React.FC = () => {
 							pariatur delectus vitae ab?
 						</p>
 					</div>
-
 					<div>
-						<div className="max-w-[260px]  rounded-full  overflow-hidden bg-[#34545a]">
+						<div className="about__img">
 							<img src={aboutImg} />
 						</div>
 
-						<div className="social mt-6 flex gap-5 justify-center">
-							<a
-								href="https://t.me/kamolketocoach"
-								target="_blank"
-								className="w-10 h-10 bg-[#e7b06d] rounded-full flex items-center justify-center"
-							>
+						<div className="social-links">
+							<a href="https://t.me/kamolketocoach" target="_blank">
 								<BiLogoTelegram color="white" size={24} />
 							</a>
 							<a
 								href="https://www.instagram.com/kamolketocoach/"
 								target="_blank"
-								className="w-10 h-10 bg-[#e7b06d] rounded-full flex items-center justify-center"
 							>
 								<BiLogoInstagram color="white" size={24} />
 							</a>
-							<a
-								href="tel:+998916282227"
-								target="_blank"
-								className="w-10 h-10 bg-[#e7b06d] rounded-full flex items-center justify-center"
-							>
+							<a href="tel:+998916282227" target="_blank">
 								<BiPhone color="white" size={24} />
 							</a>
 						</div>

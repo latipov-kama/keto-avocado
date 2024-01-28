@@ -1,6 +1,6 @@
 import Layout from "./layouts/layout";
 import Home from "./sections/home/home";
-import Info from "./sections/info/info";
+import Course from "./sections/course/course";
 import About from "./sections/about/about";
 import Problems from "./sections/problems/problem";
 import Service from "./sections/service/service";
@@ -12,7 +12,7 @@ function App() {
 		<Layout>
 			<Home />
 			<About />
-			<Info />
+			<Course />
 			<Service />
 			<Problems />
 			<Results />

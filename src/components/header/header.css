@@ -1,0 +1,29 @@
+header {
+	@apply w-full h-[60px] px-5 flex items-center justify-between
+	 border-b-[1px] border-gray-300 fixed left-0 top-0 z-50 bg-white;
+}
+
+.nav__list {
+	@apply hidden md:flex items-center gap-6 font-medium;
+}
+
+.nav__link {
+	@apply text-[#20292f] duration-150 ease-linear hover:text-[#40a38c];
+}
+
+.header__menu {
+	@apply block md:hidden;
+}
+
+.header__menu-modal {
+	@apply bg-black bg-opacity-90 w-full h-full fixed top-[0px] left-0 z-20 duration-200 ease-linear;
+}
+
+.header__menu-list {
+	@apply h-full flex flex-col items-center justify-center gap-8
+  text-3xl;
+}
+
+.header__menu-link {
+	@apply text-white duration-200 ease-linear  hover:text-[#bbbbbb];
+}

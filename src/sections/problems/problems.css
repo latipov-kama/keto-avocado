@@ -1,0 +1,27 @@
+#problems {
+	@apply py-10 bg-gradient-to-t from-[#fafafa];
+}
+
+.problems-content {
+	@apply max-w-[1144px] mx-auto px-8;
+}
+
+.problems-content fieldset {
+	@apply px-6 sm:px-12 py-8 border-[1px] border-gray-400 text-left;
+}
+
+.problems-content legend span {
+	@apply text-xl sm:text-2xl text-gray-800 font-medium;
+}
+
+.problems__box {
+	@apply md:flex;
+}
+
+.problems__list {
+	@apply flex-1 flex flex-col gap-2 sm:text-lg uppercase text-gray-800;
+}
+
+.problems__list span {
+	@apply text-[#15C39A] mr-2;
+}

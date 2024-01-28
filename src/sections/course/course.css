@@ -1,0 +1,40 @@
+.course {
+	@apply pt-20 pb-10 px-8;
+}
+
+.course-content {
+	@apply max-w-[1144px] mx-auto flex md:flex-row flex-col gap-10 md:gap-20;
+}
+
+.course__info {
+	@apply flex-1 flex flex-col justify-center md:text-left text-center md:items-start items-center;
+}
+
+.course__info h2 {
+	@apply mt-2 mb-6 text-2xl sm:text-3xl md:text-4xl font-bold leading-snug text-[#FFC47C];
+}
+.course__info span {
+	@apply text-lg text-[#333] font-medium;
+}
+.course__info p {
+	@apply text-sm text-[#666];
+}
+.course__info button {
+	@apply w-fit mt-10;
+}
+
+.course__about {
+	@apply flex-1 flex flex-col gap-6 md:gap-10;
+}
+.course__about-item {
+	@apply p-7 flex gap-5 items-center shadow-md;
+}
+.course__about-item img {
+	@apply w-20;
+}
+.course__about-item h3 {
+	@apply mb-1 text-[#333] text-lg font-bold;
+}
+.course__about-item p {
+	@apply text-[#666] text-sm;
+}

@@ -1,0 +1,18 @@
+#home {
+	@apply h-screen  mx-auto pt-[70px] flex flex-col justify-center relative overflow-hidden;
+}
+
+.home__content {
+	@apply w-full mx-auto flex flex-col items-center relative z-10 text-center;
+}
+
+.home__content h1 {
+	@apply text-4xl sm:text-5xl md:text-[64px] tracking-widest text-[#333] drop-shadow-xl;
+}
+
+.home__content p {
+	@apply mt-6 text-[#333] font-medium tracking-widest uppercase;
+}
+.home__content button {
+	@apply mt-8;
+}

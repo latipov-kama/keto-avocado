@@ -1,3 +1,5 @@
+import "./problems.css";
+
 const Problems: React.FC = () => {
 	const problems: string[] = [
 		"Лишний вес",
@@ -9,28 +11,26 @@ const Problems: React.FC = () => {
 	];
 
 	return (
-		<section className="py-10 bg-gradient-to-t from-[#fafafa]">
-			<div className="max-w-[1144px] mx-auto px-8">
-				<fieldset className="px-6 sm:px-12 py-8 border-[1px] border-gray-400 text-left">
+		<section id="problems">
+			<div className="problems-content">
+				<fieldset>
 					<legend>
-						<span className="text-xl  sm:text-2xl text-gray-800 font-medium">
-							Проблемы связанные с питанием
-						</span>
+						<span>Проблемы связанные с питанием</span>
 					</legend>
 
-					<div className="md:flex">
-						<ul className="flex-1 flex flex-col gap-2 sm:text-lg uppercase text-gray-800">
+					<div className="problems__box">
+						<ul className="problems__list">
 							{problems.map((item, i) => (
 								<li key={i}>
-									<span className="text-[#15C39A] mr-2">✔</span>
+									<span>✔</span>
 									{item}
 								</li>
 							))}
 						</ul>
-						<ul className="flex-1 flex flex-col gap-2 sm:text-lg uppercase text-gray-800">
+						<ul className="problems__list">
 							{problems.slice(0, 4).map((item, i) => (
 								<li key={i}>
-									<span className="text-[#15C39A] mr-2">✔</span>
+									<span>✔</span>
 									{item}
 								</li>
 							))}

@@ -58,16 +58,18 @@ const ResultBMI: React.FC<props> = ({ bmi, height }) => {
 	};
 
 	return (
-		<div className="flex-[58%] pt-4 sm:mt-0 mt-6">
-			<div className="mb-12 flex items-center">
-				<span className="w-32 mr-5 text-sm text-[#555]">Индекс массы тела</span>
-				<div className="text-[#222] font-bold">
-					{bmi?.toFixed(1)}
-					<span className="text-[#555] font-normal">кг/м2</span>
-				</div>
+		<div className="bmi-info">
+			<div className="bmi__result">
+				<span>Индекс массы тела</span>
+				{bmi && (
+					<div className="bmi__result-number">
+						{bmi?.toFixed(1)}
+						<span> кг/м2</span>
+					</div>
+				)}
 			</div>
 
-			<div className="flex gap-0.5 w-full text-sm leading-4 text-white font-medium relative">
+			<div className="bmi__ranges">
 				{bmi && <RangePointer bmi={bmi} ranges={bmiRanges} />}
 
 				{bmiRanges.map((range, idx) => (
@@ -75,24 +77,22 @@ const ResultBMI: React.FC<props> = ({ bmi, height }) => {
 				))}
 			</div>
 
-			<div className="mt-8 flex items-center">
-				<span className="w-32 mr-5 text-sm text-[#555]">Категория</span>
+			<div className="bmi__category">
+				<span>Категория</span>
 				{bmi && (
 					<p style={{ color: returnRange(bmi)?.color, fontWeight: "bold" }}>
 						{returnRange(bmi)?.label}
 					</p>
 				)}
 			</div>
-			<div className="mt-6 flex items-center">
-				<span className="w-32 mr-5 text-sm text-[#555]">
-					Диапазон нормального веса
-				</span>
-				<div className="text-[#222] font-bold">
+			<div className="weight__range">
+				<span>Диапазон нормального веса</span>
+				<div className="weight__range-result">
 					{normalWeightRange &&
 						`${normalWeightRange[0].toFixed(
 							1
 						)} ... ${normalWeightRange[1].toFixed(1)}`}
-					<span className="text-[#555] font-normal"> кг</span>
+					<span> кг</span>
 				</div>
 			</div>
 		</div>

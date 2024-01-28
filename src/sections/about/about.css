@@ -1,0 +1,36 @@
+#about {
+	@apply bg-[#34545a] relative overflow-hidden;
+}
+
+.about-content {
+	@apply max-w-[1144px] mx-auto px-8 pb-14 pt-20 text-center;
+}
+
+.about-box {
+	@apply flex flex-col md:flex-row justify-evenly items-center gap-10;
+}
+
+.about__info {
+	@apply flex flex-col text-center md:text-left;
+}
+
+.about__info h2 {
+	@apply mb-5 text-xl text-white font-medium;
+}
+.about__info span {
+	@apply block mt-2 text-4xl text-[#FFC47C];
+}
+.about__info p {
+	@apply max-w-[500px] text-white;
+}
+
+.about__img {
+	@apply max-w-[260px] rounded-full  overflow-hidden bg-[#34545a];
+}
+
+.social-links {
+	@apply mt-6 flex gap-5 justify-center;
+}
+.social-links a {
+	@apply w-10 h-10 bg-[#e7b06d] rounded-full flex items-center justify-center;
+}

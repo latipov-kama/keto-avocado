@@ -13,13 +13,10 @@ const Nav: React.FC<props> = () => {
 
 	return (
 		<nav>
-			<ul className="hidden md:flex items-center gap-6 font-medium">
+			<ul className="nav__list">
 				{sections.map((item, i) => (
 					<li key={i}>
-						<a
-							href={`#${item.section}`}
-							className="text-[#20292f] duration-150 ease-linear hover:text-[#40a38c]"
-						>
+						<a href={`#${item.section}`} className="nav__link">
 							{item.title}
 						</a>
 					</li>

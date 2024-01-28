@@ -1,0 +1,87 @@
+.bmi {
+	@apply bg-[#15C39A] sm:pt-32 sm:pb-24 pt-24 pb-16 px-2 relative;
+}
+
+.bmi-content {
+	@apply max-w-[1144px] mx-auto bg-white px-4 sm:px-10 py-12 rounded-lg;
+}
+
+.bmi-content h3 {
+	@apply text-[26px] text-[#333] text-center font-bold;
+}
+
+.bmi__descr {
+	@apply max-w-[600px] mx-auto mt-4 text-sm text-[#666] text-center;
+}
+
+.bmi__box {
+	@apply pt-12 md:flex gap-10;
+}
+
+.bmi__form {
+	@apply flex-[42%] flex flex-col gap-5 md:items-end;
+}
+
+.bmi__form button {
+	@apply w-full md:w-fit;
+}
+
+.bmi__form-box {
+	@apply w-full flex flex-col md:flex-row md:items-center;
+}
+
+.bmi__form-box span {
+	@apply md:w-16 w-fit mr-5 text-right text-sm text-[#555];
+}
+.bmi__form-box input {
+	@apply w-full h-14 p-4 bg-white border-[1px] border-[#dee4e4] rounded;
+}
+
+.bmi-info {
+	@apply flex-[58%] pt-4 sm:mt-0 mt-6;
+}
+
+.bmi__result {
+	@apply mb-12 flex items-center;
+}
+.bmi__result span {
+	@apply w-32 mr-5 text-sm text-[#555];
+}
+
+.bmi__result-number {
+	@apply text-[#222] font-bold;
+}
+
+.bmi__result-number span {
+	@apply text-[#555] font-normal;
+}
+
+.bmi__ranges {
+	@apply flex gap-0.5 w-full text-sm leading-4 text-white font-medium relative;
+}
+.bmi__range {
+	@apply py-2 flex justify-center items-center;
+}
+.range-pointer {
+	@apply text-[#333] text-center leading-[13px] absolute -translate-x-1/2 -top-7;
+}
+
+.bmi__category {
+	@apply mt-8 flex items-center;
+}
+
+.weight__range {
+	@apply mt-6 flex items-center;
+}
+
+.weight__range-result {
+	@apply text-[#222] font-bold;
+}
+.weight__range-result span {
+	@apply text-[#555] font-normal;
+}
+
+.bmi__category span,
+.weight__range span {
+	@apply w-32 mr-5 text-sm text-[#555];
+}

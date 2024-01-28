@@ -38,7 +38,7 @@ const RangePointer: React.FC<props> = ({ bmi, ranges }) => {
 
 	return (
 		<div
-			className="text-[#333] text-center leading-[13px] absolute -translate-x-1/2 -top-7"
+			className="range-pointer"
 			style={{
 				left: `${poitionStart() && poitionEnd()}%`,
 			}}
