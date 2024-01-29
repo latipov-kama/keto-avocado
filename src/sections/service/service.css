@@ -30,9 +30,13 @@
 .service__plan-item {
 	@apply flex flex-col items-center text-center;
 }
-.service__plan-item img {
-	@apply w-20;
+.img-avocado {
+	@apply w-20 h-20 bg-[#f1f5f9] rounded-full flex items-center justify-center;
 }
+.img-avocado img {
+	@apply w-11;
+}
+
 .service__plan-item h3 {
 	@apply mt-4 mb-2 text-lg text-[#fff] font-bold;
 }

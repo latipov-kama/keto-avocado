@@ -3,12 +3,17 @@ import { motion } from "framer-motion";
 
 const Problems: React.FC = () => {
 	const problems: string[] = [
-		"Лишний вес",
+		"Избыточный вес",
+		"Недостаток энергии",
+		"Проблемы с пищеварением",
 		"Плохой сон",
 		"Зависимость к еде",
-		"Головные боли",
+		"Нарушение обмена веществ",
 		"Плохое состояние",
-		"Нехватка энергии",
+		"Головные боли",
+		"Сахарный диабет",
+		"Нарушение гормонального баланса",
+		"Дефицит витаминов",
 	];
 
 	return (
@@ -21,7 +26,7 @@ const Problems: React.FC = () => {
 
 					<div className="problems__box">
 						<ul className="problems__list">
-							{problems.map((item, i) => (
+							{problems.slice(0, 7).map((item, i) => (
 								<motion.li
 									initial={{ opacity: 0 }}
 									whileInView={{ opacity: 1 }}
@@ -37,7 +42,7 @@ const Problems: React.FC = () => {
 							))}
 						</ul>
 						<ul className="problems__list">
-							{problems.slice(0, 4).map((item, i) => (
+							{problems.slice(7).map((item, i) => (
 								<motion.li
 									initial={{ opacity: 0 }}
 									whileInView={{ opacity: 1 }}

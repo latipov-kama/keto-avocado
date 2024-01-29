@@ -7,27 +7,34 @@ const About: React.FC = () => {
 	return (
 		<section id="about">
 			<div className="about-content">
-				{/* <h2 className="mb-5 text-3xl text-white font-bold">
+				<h2 className="mb-2 text-3xl text-white font-bold">
 					Страдаешь из-за лишнего веса?
 				</h2>
-				<p className="title mb-12 text-lg text-[#15C39A] font-bold">
+				<p className="mb-12 text-xl text-[#15C39A] font-medium">
 					Ты не один. И я здесь, чтобы помочь!
-				</p> */}
+				</p>
 
 				<div className="about-box">
-					<div className="about__info">
+					<motion.div
+						initial={{ scale: 0.8, opacity: 0 }}
+						whileInView={{ scale: 1, opacity: 1 }}
+						transition={{
+							duration: 1,
+							delay: 0.2,
+						}}
+						viewport={{ once: true }}
+						className="about__info"
+					>
 						<h2>
 							Меня зовут
 							<span>Камол Латипов</span>
 						</h2>
 						<p>
-							Lorem, ipsum dolor sit amet consectetur adipisicing elit. Harum
-							nulla vero deleniti autem in molestias fuga velit voluptate aut
-							quas laborum nobis a consequuntur alias cum libero ex fugit
-							necessitatibus atque, eligendi possimus omnis! Velit omnis
-							pariatur delectus vitae ab?
+							На сегодняшний день я являюсь лецинзированным нутрициологом.
+							Помогаю людям избавится от лишнего веса и вести здоровый образ
+							жизни.
 						</p>
-					</div>
+					</motion.div>
 					<motion.div
 						initial={{ scale: 0.8, opacity: 0 }}
 						whileInView={{ scale: 1, opacity: 1 }}

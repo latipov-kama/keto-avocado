@@ -26,21 +26,18 @@ const Service: React.FC = () => {
 				<div className="service__diet-content">
 					<h2>Я работаю с вами над созданием индивидуального плана питания</h2>
 					<p>
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur
-						finibus sodales urna, vel ornare orci cursus sit amet. Vivamus
-						condimentum risus faucibus felis aliquet ullamcor Praesent sapien
-						massa, convallis a pellentesque nec, egestas non nisi. Vestibulum
-						ante ipsum primis in faucibus orci luctus et ultrices posuere
-						cubilia Curae; Donec velit neque, auctor sit amet aliquam vel,
-						ullamcorper sit amet ligula. Sed porttitor lectus nibh. Curabitur
-						arcu erat, accumsan id imperdiet et, porttitor at sem.
+						Это ежедневное составление времени питания для каждого
+						индивидуально, а также подробная информация о полезных и вредных
+						продуктов, влияющих на вес. Более того, привлекательное и
+						разнообразное питание станет ключом к вашему похудению и отказу от
+						вредных привычек.
 					</p>
 				</div>
 			</div>
 			<div className="service-plan">
 				<div className="service__plan-content">
 					<div className="service__plan-item">
-						<motion.img
+						<motion.div
 							initial={{ scale: 0.8, opacity: 0 }}
 							whileInView={{ scale: 1, opacity: 1 }}
 							transition={{
@@ -48,10 +45,14 @@ const Service: React.FC = () => {
 								delay: 0.2,
 							}}
 							viewport={{ once: true }}
-							src={icon1}
-						/>
+							className="img-avocado"
+						>
+							<img src={icon1} />
+						</motion.div>
 						<h3>Коачинг по питанию</h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+						<p>
+							Руководство к здоровому образу жизни через разнообразное питание.
+						</p>
 					</div>
 					<div className="service__plan-item">
 						<motion.img
@@ -65,7 +66,10 @@ const Service: React.FC = () => {
 							src={icon3}
 						/>
 						<h3>Витамины и добавки</h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+						<p>
+							Правильный подбор всех витаминов и нутриентов необходимых для
+							организма.
+						</p>
 					</div>
 					<div className="service__plan-item">
 						<motion.img
@@ -79,7 +83,7 @@ const Service: React.FC = () => {
 							src={icon2}
 						/>
 						<h3>Спортивные советы</h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+						<p>Полезные спортивные советы и упражнения для жиро-сжигания.</p>
 					</div>
 					<div className="service__plan-item">
 						<motion.img
@@ -93,7 +97,7 @@ const Service: React.FC = () => {
 							src={icon4}
 						/>
 						<h3>Похудение</h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+						<p>Идеальное похудение, обеспечивающее максимальный комфорт.</p>
 					</div>
 				</div>
 			</div>

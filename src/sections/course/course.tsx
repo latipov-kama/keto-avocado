@@ -26,10 +26,9 @@ const Course: React.FC = () => {
 						<h2>Курс здорового питания</h2>
 
 						<p>
-							Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minus
-							quam ratione provident laudantium nemo necessitatibus, ut
-							excepturi repellat, vero quod itaque consectetur cupiditate
-							laboriosam exercitationem eum. Ipsam vitae voluptatibus totam.
+							Основанный на принципах кето, не просто диета, а образ жизни.
+							Обучение включает в себя принципы питания, поддерживающие
+							здоровье, энергию и устойчивость.
 						</p>
 
 						<button onClick={openModal}>Связаться</button>
@@ -49,8 +48,8 @@ const Course: React.FC = () => {
 							<div>
 								<h3>Коучинг по питанию</h3>
 								<p>
-									Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-									Dolorum, qui.
+									Создаём здоровые привычки в еде, достигаем целей и улучшаем
+									общее здоровье.
 								</p>
 							</div>
 						</motion.div>
@@ -67,10 +66,7 @@ const Course: React.FC = () => {
 							<img src={icon2} />
 							<div>
 								<h3>Гарантированные результаты</h3>
-								<p>
-									Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-									Dolorum, qui.
-								</p>
+								<p>За месяц вы можете похудеть от 8 до 12 кг.</p>
 							</div>
 						</motion.div>
 						<motion.div
@@ -84,8 +80,7 @@ const Course: React.FC = () => {
 							<div>
 								<h3>Индивидуальный план</h3>
 								<p>
-									Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-									Dolorum, qui.
+									Ориентированный на уникальные потребности организма.
 								</p>
 							</div>
 						</motion.div>
