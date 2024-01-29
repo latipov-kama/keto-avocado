@@ -42,7 +42,7 @@ const Problems: React.FC = () => {
 									initial={{ opacity: 0 }}
 									whileInView={{ opacity: 1 }}
 									transition={{
-										delay: +`0.${i}`,
+										delay: +`0.${i + 5}`,
 										duration: 1,
 									}}
 									key={i}
