@@ -34,7 +34,8 @@
 	@apply md:w-16 w-fit mr-5 text-right text-sm text-[#555];
 }
 .bmi__form-box input {
-	@apply w-full h-14 p-4 bg-white border-[1px] border-[#dee4e4] rounded;
+	@apply w-full h-14 p-4 rounded-md bg-white duration-150 ease-linear 
+	outline-none border border-[#cccccc] focus:border-[#16a34a50] focus:border-2;
 }
 
 .bmi-info {

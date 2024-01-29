@@ -92,7 +92,7 @@ const ResultBMI: React.FC<props> = ({ bmi, height }) => {
 						`${normalWeightRange[0].toFixed(
 							1
 						)} ... ${normalWeightRange[1].toFixed(1)}`}
-					<span> кг</span>
+					{bmi && <span> кг</span>}
 				</div>
 			</div>
 		</div>

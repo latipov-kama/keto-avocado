@@ -15,10 +15,6 @@ header {
 	@apply block md:hidden;
 }
 
-.header__menu-modal {
-	@apply bg-black bg-opacity-90 w-full h-full fixed top-[0px] left-0 z-20 duration-200 ease-linear;
-}
-
 .header__menu-list {
 	@apply h-full flex flex-col items-center justify-center gap-8
   text-3xl;

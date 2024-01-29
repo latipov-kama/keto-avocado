@@ -1,6 +1,7 @@
 import aboutImg from "../../assets/images/orig.jpg";
 import { BiLogoTelegram, BiLogoInstagram, BiPhone } from "react-icons/bi";
 import "./about.css";
+import { motion } from "framer-motion";
 
 const About: React.FC = () => {
 	return (
@@ -27,10 +28,26 @@ const About: React.FC = () => {
 							pariatur delectus vitae ab?
 						</p>
 					</div>
-					<div>
-						<div className="about__img">
+					<motion.div
+						initial={{ scale: 0.8, opacity: 0 }}
+						whileInView={{ scale: 1, opacity: 1 }}
+						transition={{
+							duration: 1,
+						}}
+						viewport={{ once: true }}
+					>
+						<motion.div
+							className="about__img"
+							animate={{
+								translateY: [0, -15, 0],
+							}}
+							transition={{
+								duration: 3,
+								repeat: Infinity,
+							}}
+						>
 							<img src={aboutImg} />
-						</div>
+						</motion.div>
 
 						<div className="social-links">
 							<a href="https://t.me/kamolketocoach" target="_blank">
@@ -46,7 +63,7 @@ const About: React.FC = () => {
 								<BiPhone color="white" size={24} />
 							</a>
 						</div>
-					</div>
+					</motion.div>
 				</div>
 			</div>
 

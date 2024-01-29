@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import ResultBMI from "../../components/common/result-bmi";
+import { motion } from "framer-motion";
 import "./bmi.css";
 
 const BMI: React.FC = () => {
@@ -24,13 +25,24 @@ const BMI: React.FC = () => {
 	return (
 		<section className="bmi">
 			<div id="bmi" className="bmi-content">
-				<h3>Рассчитайте свой ИМТ сегодня</h3>
+				<div>
+					<motion.h3
+						initial={{ y: -30, opacity: 0 }}
+						whileInView={{ y: 0, opacity: 1 }}
+						transition={{
+							duration: 0.8,
+						}}
+						viewport={{ once: true }}
+					>
+						Рассчитайте свой ИМТ сегодня
+					</motion.h3>
 
-				<p className="bmi__descr">
-					Индекс массы тела является показателем отношения веса и роста
-					человека. Данный параметр помогает определить отклонения от нормальной
-					массы тела в ту или иную сторону.
-				</p>
+					<p className="bmi__descr">
+						Индекс массы тела является показателем отношения веса и роста
+						человека. Данный параметр помогает определить отклонения от
+						нормальной массы тела в ту или иную сторону.
+					</p>
+				</div>
 				<div className="bmi__box">
 					<div className="bmi__form ">
 						<div className="bmi__form-box">

@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import BgMain from "../../components/common/bg-main";
-import SignupForm from "../../components/common/signup-modal";
+import SignupForm from "../../components/common/signup-form";
+import { motion } from "framer-motion";
 import "./home.css";
 
 const Home: React.FC = () => {
@@ -19,8 +20,17 @@ const Home: React.FC = () => {
 			<section id="home">
 				<BgMain />
 				<div className="home__content">
-					<h1>НУТРИЦОЛОГ</h1>
-					<p>Специализированный коучинг по питанию</p>
+					<motion.div
+						initial={{ scale: 0.8, opacity: 0 }}
+						whileInView={{ scale: 1, opacity: 1 }}
+						transition={{
+							duration: 1,
+						}}
+						viewport={{ once: true }}
+					>
+						<h1>НУТРИЦОЛОГ</h1>
+						<p>Специализированный коучинг по питанию</p>
+					</motion.div>
 
 					<button onClick={openModal}>Записаться на курс</button>
 				</div>

@@ -1,4 +1,5 @@
 import "./problems.css";
+import { motion } from "framer-motion";
 
 const Problems: React.FC = () => {
 	const problems: string[] = [
@@ -21,18 +22,34 @@ const Problems: React.FC = () => {
 					<div className="problems__box">
 						<ul className="problems__list">
 							{problems.map((item, i) => (
-								<li key={i}>
+								<motion.li
+									initial={{ opacity: 0 }}
+									whileInView={{ opacity: 1 }}
+									transition={{
+										delay: +`0.${i}`,
+										duration: 1,
+									}}
+									key={i}
+								>
 									<span>✔</span>
 									{item}
-								</li>
+								</motion.li>
 							))}
 						</ul>
 						<ul className="problems__list">
 							{problems.slice(0, 4).map((item, i) => (
-								<li key={i}>
+								<motion.li
+									initial={{ opacity: 0 }}
+									whileInView={{ opacity: 1 }}
+									transition={{
+										delay: +`0.${i}`,
+										duration: 1,
+									}}
+									key={i}
+								>
 									<span>✔</span>
 									{item}
-								</li>
+								</motion.li>
 							))}
 						</ul>
 					</div>

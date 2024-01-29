@@ -1,5 +1,7 @@
 import React, { useState } from "react";
-import MenuButton from "../common/menu-button";
+import { BiMenu } from "react-icons/bi";
+
+import Modal from "../common/modal";
 
 interface MenuProps {}
 
@@ -25,8 +27,11 @@ const Menu: React.FC<MenuProps> = () => {
 
 	return (
 		<div className="header__menu">
-			<MenuButton isOpen={isOpen} toggleMenu={toggleMenu} />
-			<div className={`header__menu-modal ${isOpen ? "show" : "hide"}`}>
+			<div className="burger-icon" onClick={toggleMenu}>
+				<BiMenu size={40} color="#20292f" className="block"></BiMenu>
+			</div>
+
+			<Modal isOpen={isOpen} onClose={toggleMenu}>
 				<ul className="header__menu-list">
 					{sections.map((item, i) => (
 						<li key={i}>
@@ -40,7 +45,7 @@ const Menu: React.FC<MenuProps> = () => {
 						</li>
 					))}
 				</ul>
-			</div>
+			</Modal>
 		</div>
 	);
 };

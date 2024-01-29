@@ -97,9 +97,9 @@ const ClientList: React.FC = () => {
 				},
 			}}
 		>
-			{results.map((item) => (
-				<SwiperSlide>
-					<ClientElem {...item} />;
+			{results.map((item, idx) => (
+				<SwiperSlide key={idx}>
+					<ClientElem {...item} />
 				</SwiperSlide>
 			))}
 		</Swiper>

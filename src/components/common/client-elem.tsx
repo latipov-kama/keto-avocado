@@ -1,4 +1,5 @@
 import React from "react";
+import { motion } from "framer-motion";
 
 interface props {
 	img: string;
@@ -8,8 +9,6 @@ interface props {
 }
 
 const ClientElem: React.FC<props> = ({ initial, month, total, img }) => {
-	console.log(img);
-
 	return (
 		<div className="results__item">
 			<div className="results__img">
@@ -19,9 +18,14 @@ const ClientElem: React.FC<props> = ({ initial, month, total, img }) => {
 				<h3>
 					До {initial}кг | После {+initial - +total}кг
 				</h3>
-				<p>
+				<motion.p
+					animate={{
+						color: ["#29c4a9", "#34545a", "#29c4a9"],
+					}}
+					transition={{ duration: 3, repeat: Infinity }}
+				>
 					{total}кг за {month} {+month > 1 ? "месяца" : "месяц"}
-				</p>
+				</motion.p>
 			</div>
 		</div>
 	);

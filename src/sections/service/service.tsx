@@ -1,4 +1,5 @@
 import React from "react";
+import { motion } from "framer-motion";
 import icon1 from "../../assets/icons/nutrition-icon.png";
 import icon2 from "../../assets/icons/nutrition-icon-2.png";
 import icon3 from "../../assets/icons/nutrition-icon-3.png";
@@ -12,9 +13,15 @@ const Service: React.FC = () => {
 		<section id="service">
 			<div className="service-diet">
 				<div>
-					<div className="service__diet-img">
+					<motion.div
+						initial={{ scale: 0.9, opacity: 0 }}
+						whileInView={{ scale: 1, opacity: 1 }}
+						transition={{ duration: 1 }}
+						viewport={{ once: true }}
+						className="service__diet-img"
+					>
 						<img src={plan} alt="план" />
-					</div>
+					</motion.div>
 				</div>
 				<div className="service__diet-content">
 					<h2>Я работаю с вами над созданием индивидуального плана питания</h2>
@@ -33,22 +40,54 @@ const Service: React.FC = () => {
 			<div className="service-plan">
 				<div className="service__plan-content">
 					<div className="service__plan-item">
-						<img src={icon1} />
+						<motion.img
+							initial={{ scale: 0.8, opacity: 0 }}
+							whileInView={{ scale: 1, opacity: 1 }}
+							transition={{
+								duration: 1,
+							}}
+							viewport={{ once: true }}
+							src={icon1}
+						/>
 						<h3>Коачинг по питанию</h3>
 						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
 					</div>
 					<div className="service__plan-item">
-						<img src={icon3} />
+						<motion.img
+							initial={{ scale: 0.8, opacity: 0 }}
+							whileInView={{ scale: 1, opacity: 1 }}
+							transition={{
+								duration: 1,
+							}}
+							viewport={{ once: true }}
+							src={icon3}
+						/>
 						<h3>Витамины и добавки</h3>
 						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
 					</div>
 					<div className="service__plan-item">
-						<img src={icon2} />
+						<motion.img
+							initial={{ scale: 0.8, opacity: 0 }}
+							whileInView={{ scale: 1, opacity: 1 }}
+							transition={{
+								duration: 1,
+							}}
+							viewport={{ once: true }}
+							src={icon2}
+						/>
 						<h3>Спортивные советы</h3>
 						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
 					</div>
 					<div className="service__plan-item">
-						<img src={icon4} />
+						<motion.img
+							initial={{ scale: 0.8, opacity: 0 }}
+							whileInView={{ scale: 1, opacity: 1 }}
+							transition={{
+								duration: 1,
+							}}
+							viewport={{ once: true }}
+							src={icon4}
+						/>
 						<h3>Похудение</h3>
 						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
 					</div>

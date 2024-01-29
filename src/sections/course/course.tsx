@@ -1,5 +1,6 @@
 import React, { useState } from "react";
-import SignupForm from "../../components/common/signup-modal";
+import SignupForm from "../../components/common/signup-form";
+import { motion } from "framer-motion";
 import icon1 from "../../assets/icons/nutrition-1.png";
 import icon2 from "../../assets/icons/nutrition-2.png";
 import icon3 from "../../assets/icons/nutrition-3.png";
@@ -34,7 +35,15 @@ const Course: React.FC = () => {
 						<button onClick={openModal}>Связаться</button>
 					</div>
 					<div className="course__about">
-						<div className="course__about-item">
+						<motion.div
+							initial={{ scale: 0.8, opacity: 0 }}
+							whileInView={{ scale: 1, opacity: 1 }}
+							transition={{
+								duration: 1,
+							}}
+							viewport={{ once: true }}
+							className="course__about-item"
+						>
 							<img src={icon1} />
 							<div>
 								<h3>Коучинг по питанию</h3>
@@ -43,8 +52,16 @@ const Course: React.FC = () => {
 									Dolorum, qui.
 								</p>
 							</div>
-						</div>
-						<div className="course__about-item">
+						</motion.div>
+						<motion.div
+							initial={{ scale: 0.8, opacity: 0 }}
+							whileInView={{ scale: 1, opacity: 1 }}
+							transition={{
+								duration: 1,
+							}}
+							viewport={{ once: true }}
+							className="course__about-item"
+						>
 							<img src={icon2} />
 							<div>
 								<h3>Гарантированные результаты</h3>
@@ -53,8 +70,14 @@ const Course: React.FC = () => {
 									Dolorum, qui.
 								</p>
 							</div>
-						</div>
-						<div className="course__about-item">
+						</motion.div>
+						<motion.div
+							initial={{ scale: 0.8, opacity: 0 }}
+							whileInView={{ scale: 1, opacity: 1 }}
+							transition={{ duration: 1 }}
+							viewport={{ once: true }}
+							className="course__about-item"
+						>
 							<img src={icon3} />
 							<div>
 								<h3>Индивидуальный план</h3>
@@ -63,7 +86,7 @@ const Course: React.FC = () => {
 									Dolorum, qui.
 								</p>
 							</div>
-						</div>
+						</motion.div>
 					</div>
 				</div>
 			</section>

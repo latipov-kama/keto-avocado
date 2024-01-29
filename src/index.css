@@ -57,32 +57,11 @@ button {
 	transition: 0.3s;
 }
 
-.show {
-	display: block;
-	animation: fadeIn 0.4s ease;
+.modal {
+	@apply w-full h-screen bg-black bg-opacity-90 fixed top-[0px] left-0 z-50;
 }
-
-.hide {
-	animation: fadeOut 0.4s ease;
-	display: none;
-}
-
-@keyframes fadeIn {
-	from {
-		opacity: 0;
-	}
-	to {
-		opacity: 1;
-	}
-}
-
-@keyframes fadeOut {
-	from {
-		opacity: 1;
-	}
-	to {
-		opacity: 0;
-	}
+.close-modal {
+	@apply absolute right-3 top-3 z-50;
 }
 
 .main-bg::after {
@@ -104,5 +83,5 @@ button {
 
 .signup__input {
 	@apply w-full h-12 sm:h-14 p-4 rounded-md bg-[#f5f6fb] duration-150 ease-linear 
-	outline-none border border-[#cccccc] focus:border-[#16a34a50] focus:border-4;
+	outline-none border border-[#cccccc] focus:border-[#16a34a50] focus:border-2;
 }
