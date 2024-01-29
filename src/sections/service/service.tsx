@@ -16,7 +16,7 @@ const Service: React.FC = () => {
 					<motion.div
 						initial={{ scale: 0.9, opacity: 0 }}
 						whileInView={{ scale: 1, opacity: 1 }}
-						transition={{ duration: 1 }}
+						transition={{ duration: 1, delay: 0.2 }}
 						viewport={{ once: true }}
 						className="service__diet-img"
 					>
@@ -45,6 +45,7 @@ const Service: React.FC = () => {
 							whileInView={{ scale: 1, opacity: 1 }}
 							transition={{
 								duration: 1,
+								delay: 0.2,
 							}}
 							viewport={{ once: true }}
 							src={icon1}
@@ -58,6 +59,7 @@ const Service: React.FC = () => {
 							whileInView={{ scale: 1, opacity: 1 }}
 							transition={{
 								duration: 1,
+								delay: 0.2,
 							}}
 							viewport={{ once: true }}
 							src={icon3}
@@ -71,6 +73,7 @@ const Service: React.FC = () => {
 							whileInView={{ scale: 1, opacity: 1 }}
 							transition={{
 								duration: 1,
+								delay: 0.2,
 							}}
 							viewport={{ once: true }}
 							src={icon2}
@@ -84,6 +87,7 @@ const Service: React.FC = () => {
 							whileInView={{ scale: 1, opacity: 1 }}
 							transition={{
 								duration: 1,
+								delay: 0.2,
 							}}
 							viewport={{ once: true }}
 							src={icon4}

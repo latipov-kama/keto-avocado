@@ -40,6 +40,7 @@ const Course: React.FC = () => {
 							whileInView={{ scale: 1, opacity: 1 }}
 							transition={{
 								duration: 1,
+								delay: 0.2,
 							}}
 							viewport={{ once: true }}
 							className="course__about-item"
@@ -58,6 +59,7 @@ const Course: React.FC = () => {
 							whileInView={{ scale: 1, opacity: 1 }}
 							transition={{
 								duration: 1,
+								delay: 0.2,
 							}}
 							viewport={{ once: true }}
 							className="course__about-item"
@@ -74,7 +76,7 @@ const Course: React.FC = () => {
 						<motion.div
 							initial={{ scale: 0.8, opacity: 0 }}
 							whileInView={{ scale: 1, opacity: 1 }}
-							transition={{ duration: 1 }}
+							transition={{ duration: 1, delay: 0.2 }}
 							viewport={{ once: true }}
 							className="course__about-item"
 						>

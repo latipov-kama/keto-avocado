@@ -15,7 +15,7 @@
 }
 
 .problems__box {
-	@apply md:flex;
+	@apply flex flex-col md:flex-row gap-2;
 }
 
 .problems__list {

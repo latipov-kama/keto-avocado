@@ -33,6 +33,7 @@ const About: React.FC = () => {
 						whileInView={{ scale: 1, opacity: 1 }}
 						transition={{
 							duration: 1,
+							delay: 0.2,
 						}}
 						viewport={{ once: true }}
 					>
