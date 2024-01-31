@@ -8,7 +8,7 @@ const BgMain: React.FC<props> = () => {
 		<div className="main-bg w-full h-full absolute left-0 top-10 z-10">
 			<img
 				src={
-					"https://www.elegantthemes.com/layouts/wp-content/uploads/2018/09/nutritionist-34.jpg"
+					"https://www.eltiempo.com/files/image_1200_680/uploads/2022/10/21/6352b6e398cf6.jpeg"
 				}
 				alt="background"
 				className="w-full h-full object-cover object-bottom"
