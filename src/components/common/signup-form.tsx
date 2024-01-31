@@ -42,7 +42,10 @@ const SignUpModal: React.FC<props> = ({ isOpen, onClose }) => {
 
 	return (
 		<Modal isOpen={isOpen} onClose={onClose}>
-			<div className="w-full h-full flex items-center justify-center px-5">
+			<div
+				className="px-5 absolute top-1/2 -translate-y-1/2"
+				onClick={(e) => e.stopPropagation()}
+			>
 				<div className="max-w-[560px] w-full p-6  sm:p-10 bg-white rounded-lg">
 					<Logo width={48} />
 					<h3 className="mb-8 mt-3 text-2xl font-medium">Заявка на курс</h3>

@@ -1,5 +1,5 @@
 .course {
-	@apply pt-20 pb-10 px-8;
+	@apply pt-20 pb-10 sm:px-8 px-4;
 }
 
 .course-content {
@@ -11,7 +11,7 @@
 }
 
 .course__info h2 {
-	@apply mt-2 mb-6 text-2xl sm:text-3xl md:text-4xl font-bold leading-snug text-[#FFC47C];
+	@apply mt-2 mb-6 text-2xl sm:text-3xl md:text-4xl font-bold text-[#FFC47C];
 }
 .course__info span {
 	@apply text-lg text-[#333] font-medium;

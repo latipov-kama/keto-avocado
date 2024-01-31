@@ -3,7 +3,7 @@
 }
 
 .service-diet {
-	@apply max-w-[1144px] mx-auto py-5 px-6 sm:px-12 flex md:flex-row flex-col gap-12 lg:gap-16 md:items-center;
+	@apply max-w-[1144px] mx-auto py-5 px-4 sm:px-12 flex md:flex-row flex-col gap-12 lg:gap-16 md:items-center;
 }
 .service__diet-img {
 	@apply shadow-2xl p-5 w-fit mx-auto md:mx-0;
@@ -25,7 +25,7 @@
 	@apply mt-20 bg-[#34545a];
 }
 .service__plan-content {
-	@apply max-w-[1144px] mx-auto px-6 p-8 grid grid-cols-2 md:grid-cols-4 gap-5 sm:gap-10;
+	@apply max-w-[1144px] mx-auto px-4 p-8 grid grid-cols-2 md:grid-cols-4 gap-5 sm:gap-10;
 }
 .service__plan-item {
 	@apply flex flex-col items-center text-center;

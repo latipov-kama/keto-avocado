@@ -13,33 +13,28 @@ const Menu: React.FC<MenuProps> = () => {
 		{ section: "results", title: "Результаты" },
 		{ section: "bmi", title: "Калькулятор" },
 	];
-	const [isOpen, setIsOpen] = useState(false);
+	const [isOpen, setIsOpened] = useState(false);
 
-	const toggleMenu = () => {
-		if (isOpen) {
-			document.body.style.overflow = "scroll";
-		} else {
-			document.body.style.overflow = "hidden";
-		}
-
-		setIsOpen(!isOpen);
+	const openModal = () => {
+		setIsOpened(true);
 	};
-
-	console.log(window.location.hash);
+	const closeModal = () => {
+		setIsOpened(false);
+	};
 
 	return (
 		<div className="header__menu">
-			<div className="burger-icon" onClick={toggleMenu}>
+			<div className="burger-icon" onClick={openModal}>
 				<BiMenu size={40} color="#20292f" className="block"></BiMenu>
 			</div>
 
-			<Modal isOpen={isOpen} onClose={toggleMenu}>
+			<Modal isOpen={isOpen} onClose={closeModal}>
 				<ul className="header__menu-list">
 					{sections.map((item, i) => (
 						<li key={i}>
 							<a
 								href={`#${item.section}`}
-								onClick={toggleMenu}
+								onClick={closeModal}
 								className="header__menu-link"
 							>
 								{item.title}

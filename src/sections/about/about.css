@@ -40,5 +40,5 @@
 }
 
 .certificate__img {
-	@apply w-full h-full p-10 flex items-center justify-center;
+	@apply w-full p-10 absolute top-1/2 -translate-y-1/2;
 }

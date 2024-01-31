@@ -1,6 +1,6 @@
 header {
-	@apply w-full h-[60px] px-5 flex items-center justify-between
-	 border-b-[1px] border-gray-300 fixed left-0 top-0 z-50 bg-white;
+	@apply w-full h-[60px] px-4 flex items-center justify-between
+	 border-b-[1px] border-gray-300 fixed left-0 top-0 z-30 bg-white;
 }
 
 .nav__list {

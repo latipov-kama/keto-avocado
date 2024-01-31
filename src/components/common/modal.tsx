@@ -1,5 +1,5 @@
 // Modal.tsx
-import React from "react";
+import React, { useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { BiX } from "react-icons/bi";
 
@@ -10,6 +10,14 @@ interface ModalProps {
 }
 
 const Modal: React.FC<ModalProps> = ({ isOpen, onClose, children }) => {
+	useEffect(() => {
+		if (!isOpen) {
+			document.body.style.overflow = "scroll";
+		} else {
+			document.body.style.overflow = "hidden";
+		}
+	}, [isOpen]);
+
 	return (
 		<AnimatePresence>
 			{isOpen && (
@@ -19,6 +27,7 @@ const Modal: React.FC<ModalProps> = ({ isOpen, onClose, children }) => {
 					exit={{ opacity: 0 }}
 					transition={{ duration: 0.3 }}
 					className="modal"
+					onClick={onClose}
 				>
 					{children}
 					<div onClick={onClose} className="close-modal">

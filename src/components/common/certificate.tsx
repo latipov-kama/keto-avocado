@@ -19,7 +19,10 @@ const Certificate: React.FC = () => {
 			</button>
 
 			<Modal isOpen={isOpened} onClose={closeModal}>
-				<div className="certificate__img">
+				<div
+					className="certificate__img z-50"
+					onClick={(e) => e.stopPropagation()}
+				>
 					<img src={certificate} alt="Сертификат" />
 				</div>
 			</Modal>

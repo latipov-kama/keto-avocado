@@ -58,7 +58,7 @@ button {
 }
 
 .modal {
-	@apply w-full h-screen bg-black bg-opacity-90 fixed top-[0px] left-0 z-50;
+	@apply w-full h-screen bg-black bg-opacity-90 fixed top-[0px] left-0 z-40;
 }
 .close-modal {
 	@apply absolute right-3 top-3 z-50;
