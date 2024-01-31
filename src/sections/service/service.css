@@ -1,9 +1,9 @@
-#service {
+.service {
 	@apply relative pt-20 pb-12 bg-gradient-to-b from-[#fafafa] to-white overflow-hidden;
 }
 
 .service-diet {
-	@apply max-w-[1144px] mx-auto px-6 sm:px-12 flex md:flex-row flex-col-reverse gap-12 lg:gap-16 lg:items-center;
+	@apply max-w-[1144px] mx-auto py-5 px-6 sm:px-12 flex md:flex-row flex-col gap-12 lg:gap-16 md:items-center;
 }
 .service__diet-img {
 	@apply shadow-2xl p-5 w-fit mx-auto md:mx-0;

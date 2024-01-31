@@ -1,6 +1,7 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Navigation } from "swiper/modules";
 import ClientElem from "./client-elem";
+import myResult from "../../assets/images/about-1.jpg";
 import result1 from "../../assets/images/result-1.jpg";
 import result2 from "../../assets/images/result-2.jpg";
 import result3 from "../../assets/images/result-3.jpg";
@@ -16,6 +17,12 @@ import { IResult } from "../../models/Result";
 
 const ClientList: React.FC = () => {
 	const results: IResult[] = [
+		{
+			initial: 105,
+			month: 4,
+			total: 32,
+			img: myResult,
+		},
 		{
 			initial: 101,
 			month: 3,

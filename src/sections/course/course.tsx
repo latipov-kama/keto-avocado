@@ -19,20 +19,8 @@ const Course: React.FC = () => {
 	return (
 		<>
 			<SignupForm isOpen={isOpened} onClose={closeModal} />
-			<section className="course">
-				<div id="course" className="course-content">
-					<div className="course__info">
-						<span>Преобразуйте свой образ жизни</span>
-						<h2>Курс здорового питания</h2>
-
-						<p>
-							Основанный на принципах кето, не просто диета, а образ жизни.
-							Обучение включает в себя принципы питания, поддерживающие
-							здоровье, энергию и устойчивость.
-						</p>
-
-						<button onClick={openModal}>Связаться</button>
-					</div>
+			<section id="course" className="course">
+				<div className="course-content">
 					<div className="course__about">
 						<motion.div
 							initial={{ scale: 0.8, opacity: 0 }}
@@ -79,11 +67,21 @@ const Course: React.FC = () => {
 							<img src={icon3} />
 							<div>
 								<h3>Индивидуальный план</h3>
-								<p>
-									Ориентированный на уникальные потребности организма.
-								</p>
+								<p>Ориентированный на уникальные потребности организма.</p>
 							</div>
 						</motion.div>
+					</div>
+					<div className="course__info">
+						<span>Преобразуйте свой образ жизни</span>
+						<h2>Курс здорового питания</h2>
+
+						<p>
+							Основанный на принципах кето, не просто диета, а образ жизни.
+							Обучение включает в себя принципы питания, поддерживающие
+							здоровье, энергию и устойчивость.
+						</p>
+
+						<button onClick={openModal}>Связаться</button>
 					</div>
 				</div>
 			</section>

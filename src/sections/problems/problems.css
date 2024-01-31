@@ -1,4 +1,4 @@
-#problems {
+.problems {
 	@apply py-10 bg-gradient-to-t from-[#fafafa];
 }
 

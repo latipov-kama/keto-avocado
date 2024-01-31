@@ -17,9 +17,13 @@ header {
 
 .header__menu-list {
 	@apply h-full flex flex-col items-center justify-center gap-8
-  text-3xl;
+  text-3xl relative;
 }
 
 .header__menu-link {
-	@apply text-white duration-200 ease-linear  hover:text-[#bbbbbb];
+	@apply duration-200 ease-linear text-white hover:text-[#888];
+}
+
+.menu__copyright {
+	@apply w-full text-[#777] absolute bottom-4 text-center;
 }

@@ -2,18 +2,12 @@ import aboutImg from "../../assets/images/orig.jpg";
 import { BiLogoTelegram, BiLogoInstagram, BiPhone } from "react-icons/bi";
 import "./about.css";
 import { motion } from "framer-motion";
+import Certificate from "../../components/common/certificate";
 
 const About: React.FC = () => {
 	return (
-		<section id="about">
+		<section id="about" className="about">
 			<div className="about-content">
-				<h2 className="mb-2 text-3xl text-white font-bold">
-					Страдаешь из-за лишнего веса?
-				</h2>
-				<p className="mb-12 text-xl text-[#15C39A] font-medium">
-					Ты не один. И я здесь, чтобы помочь!
-				</p>
-
 				<div className="about-box">
 					<motion.div
 						initial={{ scale: 0.8, opacity: 0 }}
@@ -34,6 +28,8 @@ const About: React.FC = () => {
 							Помогаю людям избавится от лишнего веса и вести здоровый образ
 							жизни.
 						</p>
+
+						<Certificate />
 					</motion.div>
 					<motion.div
 						initial={{ scale: 0.8, opacity: 0 }}

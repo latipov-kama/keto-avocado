@@ -25,6 +25,8 @@ const Menu: React.FC<MenuProps> = () => {
 		setIsOpen(!isOpen);
 	};
 
+	console.log(window.location.hash);
+
 	return (
 		<div className="header__menu">
 			<div className="burger-icon" onClick={toggleMenu}>
@@ -45,6 +47,7 @@ const Menu: React.FC<MenuProps> = () => {
 						</li>
 					))}
 				</ul>
+				<p className="menu__copyright">&#169; 2024. Keto Avocado</p>
 			</Modal>
 		</div>
 	);

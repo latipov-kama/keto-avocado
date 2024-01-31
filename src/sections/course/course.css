@@ -3,7 +3,7 @@
 }
 
 .course-content {
-	@apply max-w-[1144px] mx-auto flex md:flex-row flex-col gap-10 md:gap-20;
+	@apply max-w-[1144px] mx-auto flex md:flex-row flex-col-reverse gap-10 md:gap-16;
 }
 
 .course__info {

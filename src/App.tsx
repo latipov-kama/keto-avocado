@@ -8,6 +8,7 @@ import BMI from "./sections/bmi/bmi";
 import Results from "./sections/results/results";
 
 function App() {
+
 	return (
 		<Layout>
 			<Home />

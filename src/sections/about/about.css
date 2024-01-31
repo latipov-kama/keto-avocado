@@ -1,4 +1,4 @@
-#about {
+.about {
 	@apply bg-[#34545a] relative overflow-hidden;
 }
 
@@ -7,7 +7,7 @@
 }
 
 .about-box {
-	@apply flex flex-col md:flex-row justify-evenly items-center gap-10;
+	@apply flex flex-col md:flex-row justify-evenly items-center gap-20;
 }
 
 .about__info {
@@ -33,4 +33,12 @@
 }
 .social-links a {
 	@apply w-10 h-10 bg-[#e7b06d] rounded-full flex items-center justify-center;
+}
+
+.btn-certificate {
+	@apply w-fit mx-auto md:mx-0 mt-5;
+}
+
+.certificate__img {
+	@apply w-full h-full p-10 flex items-center justify-center;
 }

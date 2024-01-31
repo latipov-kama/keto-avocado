@@ -17,7 +17,7 @@ const Problems: React.FC = () => {
 	];
 
 	return (
-		<section id="problems">
+		<section id="problems" className="problems">
 			<div className="problems-content">
 				<fieldset>
 					<legend>

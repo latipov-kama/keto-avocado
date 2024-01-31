@@ -1,4 +1,4 @@
-#results {
+.results {
 	@apply py-10 bg-[#fafafa] relative z-10;
 }
 

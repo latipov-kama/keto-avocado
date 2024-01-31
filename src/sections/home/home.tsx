@@ -17,7 +17,7 @@ const Home: React.FC = () => {
 	return (
 		<>
 			<SignupForm isOpen={isOpened} onClose={closeModal} />
-			<section id="home">
+			<section id="home" className="home">
 				<BgMain />
 				<div className="home__content">
 					<motion.div

@@ -23,8 +23,8 @@ const BMI: React.FC = () => {
 	};
 
 	return (
-		<section className="bmi">
-			<div id="bmi" className="bmi-content">
+		<section id="bmi" className="bmi">
+			<div className="bmi-content">
 				<div>
 					<motion.h3
 						initial={{ y: -30, opacity: 0 }}
