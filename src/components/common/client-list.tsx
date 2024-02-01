@@ -10,6 +10,7 @@ import result5 from "../../assets/images/result-5.jpg";
 import result6 from "../../assets/images/result-6.jpg";
 import result7 from "../../assets/images/result-7.jpg";
 import result8 from "../../assets/images/result-8.jpg";
+import result9 from "../../assets/images/result-9.jpg";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/autoplay";
@@ -30,17 +31,24 @@ const ClientList: React.FC = () => {
 			img: result1,
 		},
 		{
-			initial: 99,
-			month: 1,
-			total: 12,
-			img: result7,
-		},
-		{
 			initial: 68,
 			month: 2,
 			total: 14,
 			img: result3,
 		},
+		{
+			initial: 90,
+			month: 1,
+			total: 12,
+			img: result9,
+		},
+		{
+			initial: 99,
+			month: 1,
+			total: 12,
+			img: result7,
+		},
+
 		{
 			initial: 82,
 			month: 1,

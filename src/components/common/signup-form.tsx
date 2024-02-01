@@ -43,7 +43,7 @@ const SignUpModal: React.FC<props> = ({ isOpen, onClose }) => {
 	return (
 		<Modal isOpen={isOpen} onClose={onClose}>
 			<div
-				className="px-5 absolute top-1/2 -translate-y-1/2"
+				className="max-w-[600px] w-full px-5 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
 				onClick={(e) => e.stopPropagation()}
 			>
 				<div className="max-w-[560px] w-full p-6  sm:p-10 bg-white rounded-lg">

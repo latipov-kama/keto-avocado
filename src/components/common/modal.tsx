@@ -12,9 +12,9 @@ interface ModalProps {
 const Modal: React.FC<ModalProps> = ({ isOpen, onClose, children }) => {
 	useEffect(() => {
 		if (!isOpen) {
-			document.body.style.overflow = "scroll";
+			document.body.style.overflowY = "scroll";
 		} else {
-			document.body.style.overflow = "hidden";
+			document.body.style.overflowY = "hidden";
 		}
 	}, [isOpen]);
 

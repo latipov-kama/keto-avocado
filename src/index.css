@@ -30,6 +30,7 @@ body {
 	margin: 0;
 	min-width: 320px;
 	min-height: 100vh;
+	scroll-behavior: smooth;
 }
 
 h1 {
@@ -84,4 +85,13 @@ button {
 .signup__input {
 	@apply w-full h-12 sm:h-14 p-4 rounded-md bg-[#f5f6fb] duration-150 ease-linear 
 	outline-none border border-[#cccccc] focus:border-[#16a34a50] focus:border-2;
+}
+
+body::-webkit-scrollbar {
+	background-color: #ffffff;
+	width: 5px;
+}
+
+body::-webkit-scrollbar-thumb {
+	background-color: rgb(98, 152, 160);
 }
