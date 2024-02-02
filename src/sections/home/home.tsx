@@ -1,11 +1,14 @@
 import React, { useState } from "react";
+import { motion } from "framer-motion";
 import BgMain from "../../components/common/bg-main";
 import SignupForm from "../../components/common/signup-form";
-import { motion } from "framer-motion";
+import Message from "../../components/common/message";
+
 import "./home.css";
 
 const Home: React.FC = () => {
-	const [isOpened, setIsOpened] = useState(false);
+	const [isOpened, setIsOpened] = useState<boolean>(false);
+	const [status, setStatus] = useState<boolean>(false);
 
 	const openModal = () => {
 		setIsOpened(true);
@@ -14,9 +17,18 @@ const Home: React.FC = () => {
 		setIsOpened(false);
 	};
 
+	const handleMessage = (value: boolean) => {
+		setStatus(value);
+	};
+
 	return (
 		<>
-			<SignupForm isOpen={isOpened} onClose={closeModal} />
+			<Message status={status} />
+			<SignupForm
+				isOpen={isOpened}
+				onClose={closeModal}
+				handleMessage={handleMessage}
+			/>
 			<section id="home" className="home">
 				<BgMain />
 				<div className="home__content">

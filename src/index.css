@@ -95,3 +95,7 @@ body::-webkit-scrollbar {
 body::-webkit-scrollbar-thumb {
 	background-color: rgb(98, 152, 160);
 }
+
+.message__box {
+	@apply w-fit px-3 py-4 bg-[#15c39a] flex items-center gap-2 rounded-lg text-[#fff] font-medium shadow-[0px_0px_10px_#00000040] fixed z-50 left-1/2;
+}

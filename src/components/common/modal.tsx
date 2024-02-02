@@ -1,4 +1,3 @@
-// Modal.tsx
 import React, { useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { BiX } from "react-icons/bi";

@@ -5,9 +5,11 @@ import icon1 from "../../assets/icons/nutrition-1.png";
 import icon2 from "../../assets/icons/nutrition-2.png";
 import icon3 from "../../assets/icons/nutrition-3.png";
 import "./course.css";
+import Message from "../../components/common/message";
 
 const Course: React.FC = () => {
-	const [isOpened, setIsOpened] = useState(false);
+	const [isOpened, setIsOpened] = useState<boolean>(false);
+	const [status, setStatus] = useState<boolean>(false);
 
 	const openModal = () => {
 		setIsOpened(true);
@@ -16,9 +18,18 @@ const Course: React.FC = () => {
 		setIsOpened(false);
 	};
 
+	const handleMessage = (value: boolean) => {
+		setStatus(value);
+	};
+
 	return (
 		<>
-			<SignupForm isOpen={isOpened} onClose={closeModal} />
+			<Message status={status} />
+			<SignupForm
+				isOpen={isOpened}
+				onClose={closeModal}
+				handleMessage={handleMessage}
+			/>
 			<section id="course" className="course">
 				<div className="course-content">
 					<div className="course__about">
