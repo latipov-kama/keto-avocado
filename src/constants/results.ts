@@ -31,21 +31,21 @@ export const results: IResult[] = [
 		img: result1,
 	},
 	{
-		initial: 101,
-		month: 3,
-		total: 30,
+		initial: 99,
+		month: 2,
+		total: 15,
 		img: result13,
 	},
 	{
-		initial: 101,
+		initial: 86,
 		month: 3,
-		total: 30,
+		total: 10,
 		img: result14,
 	},
 	{
-		initial: 101,
+		initial: 115,
 		month: 3,
-		total: 30,
+		total: 26,
 		img: result15,
 	},
 	{
