@@ -46,13 +46,13 @@ export const results: IResult[] = [
 		initial: 101,
 		month: 3,
 		total: 30,
-		img: result14,
+		img: result15,
 	},
 	{
 		initial: 100,
 		month: 1,
 		total: 12,
-		img: result15,
+		img: result12,
 	},
 	{
 		initial: 68,
