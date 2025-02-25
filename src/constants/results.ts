@@ -38,7 +38,7 @@ export const results: IResult[] = [
 	},
 	{
 		initial: 86,
-		month: 3,
+		month: 2,
 		total: 10,
 		img: result14,
 	},
