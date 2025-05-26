@@ -16,6 +16,7 @@ import result12 from "../assets/images/result-12.jpg";
 import result13 from "../assets/images/result-13.jpg";
 import result14 from "../assets/images/result-14.jpg";
 import result15 from "../assets/images/result-15.jpg";
+import result16 from "../assets/images/result-16.jpg";
 
 export const results: IResult[] = [
 	{
@@ -35,6 +36,12 @@ export const results: IResult[] = [
 		month: 2,
 		total: 15,
 		img: result13,
+	},
+	{
+		initial: 122,
+		month: 2,
+		total: 24,
+		img: result16,
 	},
 	{
 		initial: 86,
